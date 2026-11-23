@@ -375,6 +375,16 @@ tbody tr:hover td, tbody tr:hover th { background: var(--color-primary-tint); }
 }
 
 /* ---- Lámina 04 ---- */
+.font-list > .font-card { margin-block-end: 0; }
+.font-card-stage { display: grid; align-content: start; gap: var(--space-3); }
+.font-card-name { margin: 0; font-size: var(--text-xl); line-height: var(--leading-tight); }
+.font-card-sora { font-family: var(--font-display); font-weight: 700; }
+.font-card-source { font-family: var(--font-body); font-weight: 600; }
+.font-card-mono { font-family: var(--font-mono); font-weight: 500; }
+.font-card-role, .font-card-weights { margin: 0; }
+.font-card-role { color: var(--color-text-secondary); }
+.font-card-weights { font-size: var(--text-sm); }
+.font-download { color: var(--color-primary); font-weight: 600; }
 .stage-specimen { display: grid; gap: var(--space-5); }
 .spec-display { margin: 0; font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 800; letter-spacing: var(--tracking-display); line-height: var(--leading-tight); text-wrap: balance; }
 .spec-600 { font-weight: 600; font-size: var(--text-lg); color: var(--color-text-secondary); }
@@ -702,7 +712,7 @@ dialog form { display: flex; justify-content: flex-end; gap: var(--space-3); }
 }
 .case-steps li b { color: var(--color-text); }
 
-/* ---- Lámina 07 ---- */
+/* ---- Lámina 08 ---- */
 .stage-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
 .dl {
   display: flex; gap: var(--space-3); align-items: center; text-decoration: none; color: var(--color-text);
