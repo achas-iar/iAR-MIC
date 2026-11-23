@@ -18,7 +18,7 @@ Static HTML/CSS/JS (user choice, 2026-11-20): no build step, no dependencies; op
 
 ## Product Purpose
 
-A 2027 Corporate Identity Manual + design-system reference for Industrial Augmented Reality S.L. (brand: iAR). It centralizes the visual and verbal identity under the single `iAR` brand, presented in a friendly, approachable way for both non-technical readers and product teams, and standardizes tokens, UI components and slide templates. Success: consistent, accessible application of the iAR brand across products, dashboards, presentations and providers.
+A timeless Corporate Identity Manual + design-system reference for Industrial Augmented Reality S.L. (brand: iAR). It centralizes the visual and verbal identity under the single `iAR` brand, presented in a friendly, approachable way for both non-technical readers and product teams, and standardizes tokens, UI components and slide templates. Success: consistent, accessible application of the iAR brand across products, dashboards, presentations and providers.
 
 ## Positioning
 

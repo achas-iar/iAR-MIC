@@ -1,5 +1,5 @@
 ---
-name: "iAR · Manual de Identidad Corporativa 2027"
+name: "iAR · Manual de Identidad Corporativa"
 description: "Engineering-drawing-sheet identity manual and design system for Industrial Augmented Reality S.L. (iAR): corporate teal, cool ink neutrals, Sora / Source Sans 3 / IBM Plex Mono, light+dark registers."
 world: "eaf8421e5f7ea8e3"
 colors:
@@ -248,7 +248,7 @@ components:
     rounded: "0"
 ---
 
-# Design System: iAR · Manual de Identidad Corporativa 2027
+# Design System: iAR · Manual de Identidad Corporativa
 
 ## Overview
 

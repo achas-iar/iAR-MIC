@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-11-21T10:11:36+00:00",
-  "title": "Design System: iAR · Manual de Identidad Corporativa 2027",
+  "title": "Design System: iAR · Manual de Identidad Corporativa",
   "seededFrom": {
     "seed": "eaf8421e5f7ea8e3",
     "form": "lámina acotada (position 5)",
@@ -1280,7 +1280,7 @@
       "kind": "custom",
       "refersTo": "cajetin",
       "description": "Signature sheet foot: 4-column grid, 2px frame border, hairline dividers, mono caps keys + 600 values. Every lámina carries one.",
-      "html": "<div class=\"ds-cajetin\" role=\"table\" aria-label=\"Cajetín de la lámina\"><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Proyecto</span><span class=\"ds-v\">Manual de Identidad Corporativa 2027</span></div><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Empresa</span><span class=\"ds-v\">Industrial Augmented Reality S.L.</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Hoja</span><span class=\"ds-v\">03 de 07</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Escala</span><span class=\"ds-v\">—</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Rev</span><span class=\"ds-v\">1.0</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Fecha</span><span class=\"ds-v\">2026-11</span></div></div>",
+      "html": "<div class=\"ds-cajetin\" role=\"table\" aria-label=\"Cajetín de la lámina\"><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Proyecto</span><span class=\"ds-v\">Manual de Identidad Corporativa</span></div><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Empresa</span><span class=\"ds-v\">Industrial Augmented Reality S.L.</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Hoja</span><span class=\"ds-v\">03 de 07</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Escala</span><span class=\"ds-v\">—</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Rev</span><span class=\"ds-v\">1.0</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Fecha</span><span class=\"ds-v\">2026-11</span></div></div>",
       "css": ".ds-cajetin{--frame:color-mix(in oklab,var(--color-text,#0e1b20) 62%,var(--color-bg,#f6f7f7));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--frame);background:var(--color-surface,#ffffff);font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;color:var(--color-text,#0e1b20);font-variant-numeric:tabular-nums;}.ds-cj{padding:.5rem .75rem;border-inline-start:1px solid var(--color-line,#d3dde0);border-block-start:1px solid var(--color-line,#d3dde0);}.ds-cj:nth-child(-n+4){border-block-start:0;}.ds-cj:nth-child(4n+1){border-inline-start:0;}.ds-cj.ds-wide{grid-column:span 2;}.ds-k{display:block;font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted,#5b6d73);}.ds-v{font-weight:600;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);}"
     },
     {

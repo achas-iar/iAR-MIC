@@ -1,4 +1,4 @@
-/* iAR · Manual de Identidad Corporativa 2027 — comportamiento del manual
+/* iAR · Manual de Identidad Corporativa — comportamiento del manual
    Patrones: modern-web-guidance (dark-mode-toggle, scrollspy, copy-button,
    dialog, declarative-dialog-popover-control). Todo progresivo: sin JS el
    manual se lee completo y sigue el esquema del sistema. */
