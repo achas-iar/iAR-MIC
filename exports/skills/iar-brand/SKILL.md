@@ -1,6 +1,6 @@
 ---
-name: iAR Brand
-description: Manual de identidad corporativa y sistema de diseño de iAR (Industrial Augmented Reality S.L.). Usar cuando se cree o modifique cualquier material de marca iAR: aplicaciones web/móvil, dashboards, presentaciones, documentos, landings, emails o componentes UI. Incluye tokens, logos, tipografía, color, reglas de uso y recursos clave.
+name: iar-brand
+description: Aplica y revisa la identidad corporativa y el sistema de diseño de iAR (Industrial Augmented Reality S.L.) en aplicaciones, interfaces, dashboards, presentaciones, documentos, landings, emails y otros materiales de marca. Usa sus tokens, logotipos aprobados y reglas de accesibilidad y comunicación.
 ---
 
 # iAR Brand Skill
@@ -13,6 +13,13 @@ Guía operativa para aplicar la identidad corporativa de **iAR (Industrial Augme
 - Crear presentaciones, documentos comerciales, plantillas o materiales de comunicación.
 - Generar assets visuales que deban respetar la marca iAR.
 - Revisar coherencia de marca en un proyecto existente.
+
+## Cómo aplicar la skill
+
+1. Identificar el soporte, el público, el idioma y si se necesitan temas claro y oscuro.
+2. Consultar los recursos pertinentes: tokens para implementar interfaces, `references/DESIGN.md` para reglas y ejemplos, y `references/brand-brief.md` para posicionamiento y comunicación.
+3. Reutilizar los logotipos aprobados y los tokens adecuados al soporte; preservar la funcionalidad y las convenciones del proyecto donde se integran.
+4. Verificar el resultado en su contexto real, incluido el contraste de cada combinación utilizada. Si falta un recurso o dato necesario, indicarlo en vez de inventarlo.
 
 ## Principios de marca
 
@@ -37,7 +44,11 @@ Rutas relativas a este directorio de skill:
 - `assets/logo/iar-isotipo-negative.svg` — isotipo negativo.
 - `assets/logo/iar-logo.png` — raster de referencia.
 
-> Usar los SVG aprobados tal cual: **recolorear o recortar solo dentro de las versiones permitidas**. Nunca redibujar.
+> Usar los archivos aprobados tal cual y elegir la versión adecuada; no generar variantes mediante recoloración, recorte o redibujo.
+
+Las fuentes tipográficas no están incluidas en el paquete. Asegurar su disponibilidad y licencia en el proyecto de destino, o utilizar las alternativas definidas en los tokens.
+
+`tokens/tokens.css` también incluye reglas globales, utilidades y un mecanismo de tema basado en `meta[name="color-scheme"]`. Revisar sus efectos antes de incorporarlo a un proyecto existente; adaptar la integración al sistema de temas del proyecto y verificar ambos modos, incluido el fallback.
 
 ## Logotipo
 
@@ -51,9 +62,10 @@ Rutas relativas a este directorio de skill:
 | Isotipo negativo | `assets/logo/iar-isotipo-negative.svg` | Isotipo sobre fondo oscuro |
 
 ### Reglas
-- **Área de respeto**: 1x en todos los lados, donde `x = altura del anillo` del isotipo (40.53u en el SVG original).
-- **Tamaño mínimo**: logo completo 96px digital / 24mm impresión. Por debajo, usar isotipo (24px / 6mm).
+- **Área de respeto**: 1x en todos los lados, donde `x = altura del anillo` del isotipo (40.53u en el SVG original). Asegurarla alrededor de la marca visible; el espacio vacío del archivo puede no ser suficiente.
+- **Tamaño mínimo**: logo completo 96px de ancho digital / 24mm de ancho en impresión. Por debajo, usar isotipo a un mínimo de 24px / 6mm; si no cabe, no reducirlo más.
 - **No hacer**: estirar, rotar, añadir sombras/bisel/efectos, recolorear fuera de versiones aprobadas, colocar sobre fondos con bajo contraste.
+- En fotografías, elegir un área de luminancia uniforme con contraste suficiente o colocar el logo sobre una superficie sólida.
 - **La cruz sola no se usa** como versión de marca/logo independiente.
 
 ## Color
@@ -81,12 +93,14 @@ Rutas relativas a este directorio de skill:
 - **Success**: `#1A7F4E` / on `#FFFFFF`
 - **Warning**: `#E8A013` / on `#0E1B20` (el warning usa texto oscuro)
 - **Error**: `#B3261E` / on `#FFFFFF`
-- **Info**: usa el par primary
+- **Info**: sólido `#05677F` / on `#FFFFFF`, invariable; el texto inline y los fondos suaves usan las variantes primary del modo.
 
 ### Reglas de color
-- Usar tokens semánticos (`--color-*`), no hex hardcodeados dependientes de modo.
+- Usar tokens semánticos (`--color-*`) para colores dependientes del modo; para rellenos sólidos invariantes, usar los pares `--iar-*-solid` y `--iar-on-*`.
 - `--color-border` para controles/estados; `--color-line` solo decorativo.
 - No cambiar sólidos semánticos entre claro/oscuro.
+- El complementario sólido `#D96B27` con blanco no alcanza 4.5:1 para texto normal; reservar ese par para texto grande y verificarlo, o usar otra combinación accesible. Para texto inline, usar `--color-complement-text` y comprobar el contraste sobre su fondo.
+- Comprobar el contraste sobre los fondos reales: texto normal ≥4.5:1, texto grande y elementos de interfaz necesarios ≥3:1. Un token no garantiza contraste suficiente sobre cualquier superficie.
 - El estado nunca se comunica solo por color: añadir icono/texto.
 
 ## Tipografía
@@ -110,7 +124,7 @@ Rutas relativas a este directorio de skill:
 - **Botón secundario**: surface + borde funcional + texto principal.
 - **Botón ghost**: transparente, texto primary, hover tint.
 - **Inputs**: surface, borde `--color-border`, radius 4px, label visible, foco claro.
-- **Badges/estados**: sólido semántico + icono + texto.
+- **Badges/estados**: sólido semántico y su color on-solid + icono + texto.
 - **Alertas**: tint semántico, borde suave, icono, título + descripción.
 - **Tablas**: cabecera clara, números tabulares, hover suave, responsive.
 - **Cards/KPIs**: jerarquía clara, valor destacado, contexto/unidad.
@@ -120,7 +134,7 @@ Rutas relativas a este directorio de skill:
 - Fondo base/surface/sunken para profundidad; sombras solo cuando algo flota realmente.
 - Radio contenido: 4px en controles, 8px en contenedores, pill solo badges/chips/switch.
 - Foco visible siempre (2px, color focus, offset).
-- Contraste AA mínimo; estados no solo por color.
+- Contraste AA mínimo sobre los fondos efectivos; estados no solo por color.
 - Respetar `prefers-reduced-motion`.
 - Diseñar para ES/EN/FR: evitar anchos fijos que rompan etiquetas largas.
 
@@ -152,7 +166,7 @@ Rutas relativas a este directorio de skill:
 
 - [ ] Usa solo marca `iAR` y logos aprobados.
 - [ ] Colores y tipografía salen de tokens/reglas.
-- [ ] Contraste y foco visibles.
+- [ ] Contraste comprobado sobre los fondos reales y foco visible.
 - [ ] Estados con icono/texto, no solo color.
 - [ ] Datos demo etiquetados como sintéticos.
 - [ ] Funciona en claro/oscuro si aplica.
