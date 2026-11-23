@@ -1,0 +1,304 @@
+/* ==========================================================================
+   iAR Design Tokens v1.0 (propuesta) — Industrial Augmented Reality S.L.
+   Fuente de verdad: tokens/design-tokens.json
+   Patrón de modo claro/oscuro: color-scheme + light-dark() con fallback
+   prefers-color-scheme (ver guía modern-web-guidance «dark-mode»).
+   ========================================================================== */
+
+:root {
+  /* ---- Paleta cruda: teal corporativo (600 = #05677f, fijado) ---- */
+  --iar-teal-50: #eef6f8;  --iar-teal-100: #d9ecf1; --iar-teal-200: #b3d9e2;
+  --iar-teal-300: #82bfd0; --iar-teal-400: #4a9fb5; --iar-teal-500: #1b839e;
+  --iar-teal-600: #05677f; --iar-teal-700: #04566b; --iar-teal-800: #044556;
+  --iar-teal-900: #033340; --iar-teal-950: #02222b;
+
+  /* ---- Neutros fríos tintados del teal ---- */
+  --iar-ink-50: #f6f7f7;  --iar-ink-100: #eef2f3; --iar-ink-200: #d3dde0;
+  --iar-ink-300: #b9c8cc; --iar-ink-400: #8aa0a8; --iar-ink-500: #75909a;
+  --iar-ink-600: #5b6d73; --iar-ink-700: #33474f; --iar-ink-800: #1c3038;
+  --iar-ink-900: #0e1b20; --iar-ink-950: #0c1a20;
+
+  /* ---- Semánticos sólidos y colores de apoyo: invariantes entre modos (relleno + on-solid) ---- */
+  --iar-success-solid: #1a7f4e; --iar-on-success: #ffffff;
+  --iar-warning-solid: #e8a013; --iar-on-warning: #0e1b20;
+  --iar-error-solid:   #b3261e; --iar-on-error:   #ffffff;
+  --iar-info-solid:    #05677f; --iar-on-info:    #ffffff;
+  --iar-accent-solid:  #22c0b4; --iar-on-accent:  #06222c;
+  --iar-complement-solid: #d96b27; --iar-on-complement: #ffffff;
+
+  /* ---- Pares por modo (valores crudos separados) ---- */
+  --bg-light: #f6f7f7;            --bg-dark: #0c1a20;
+  --surface-light: #ffffff;       --surface-dark: #10242d;
+  --sunken-light: #eef2f3;        --sunken-dark: #0a161c;
+  --raised-light: #ffffff;        --raised-dark: #16303a;
+  --text-light: #0e1b20;          --text-dark: #e8f1f4;
+  --text-2-light: #33474f;        --text-2-dark: #a9c0c8;
+  --text-3-light: #5b6d73;        --text-3-dark: #7fa2ae;
+  --primary-light: #05677f;       --primary-dark: #4cc3dd;
+  --primary-hover-light: #04566b; --primary-hover-dark: #6fd0e4;
+  --on-primary-light: #ffffff;    --on-primary-dark: #06222c;
+  --primary-tint-light: #eef6f8;  --primary-tint-dark: #10303c;
+  --on-tint-light: #04566b;       --on-tint-dark: #b3d9e2;
+  --border-light: #75909a;        --border-dark: #5b7684;
+  --line-light: #d3dde0;          --line-dark: #24404c;
+  --success-text-light: #176b43;  --success-text-dark: #45d08a;
+  --success-tint-light: #e9f5ee;  --success-tint-dark: #122b22;
+  --warning-text-light: #8a5800;  --warning-text-dark: #f0b429;
+  --warning-tint-light: #fdf3dd;  --warning-tint-dark: #2e2410;
+  --error-text-light: #b3261e;    --error-text-dark: #ff8a80;
+  --error-tint-light: #fbeae8;    --error-tint-dark: #331a17;
+  --accent-text-light: #0e7068;   --accent-text-dark: #35d8cb;
+  --accent-tint-light: #e6f8f6;   --accent-tint-dark: #113032;
+  --complement-text-light: #9e4710; --complement-text-dark: #f59c62;
+  --complement-tint-light: #fdf1e8; --complement-tint-dark: #331e12;
+  --shadow-1-light: 0 1px 2px rgb(14 27 32 / .08), 0 1px 1px rgb(14 27 32 / .04);
+  --shadow-1-dark: 0 1px 2px rgb(0 0 0 / .4);
+  --shadow-2-light: 0 4px 12px rgb(14 27 32 / .10);
+  --shadow-2-dark: 0 4px 12px rgb(0 0 0 / .45);
+  --shadow-3-light: 0 12px 32px rgb(14 27 32 / .16);
+  --shadow-3-dark: 0 12px 32px rgb(0 0 0 / .55);
+
+  /* ---- Tokens semánticos: fallback plano (navegadores sin light-dark) ---- */
+  --color-bg: var(--bg-light);
+  --color-surface: var(--surface-light);
+  --color-sunken: var(--sunken-light);
+  --color-raised: var(--raised-light);
+  --color-text: var(--text-light);
+  --color-text-secondary: var(--text-2-light);
+  --color-text-muted: var(--text-3-light);
+  --color-primary: var(--primary-light);
+  --color-primary-hover: var(--primary-hover-light);
+  --color-on-primary: var(--on-primary-light);
+  --color-primary-tint: var(--primary-tint-light);
+  --color-on-primary-tint: var(--on-tint-light);
+  --color-border: var(--border-light);
+  --color-line: var(--line-light);
+  --color-focus: var(--primary-light);
+  --color-success-text: var(--success-text-light);
+  --color-success-tint: var(--success-tint-light);
+  --color-warning-text: var(--warning-text-light);
+  --color-warning-tint: var(--warning-tint-light);
+  --color-error-text: var(--error-text-light);
+  --color-error-tint: var(--error-tint-light);
+  --color-info-text: var(--primary-light);
+  --color-info-tint: var(--primary-tint-light);
+  --color-accent-text: var(--accent-text-light);
+  --color-accent-tint: var(--accent-tint-light);
+  --color-complement-text: var(--complement-text-light);
+  --color-complement-tint: var(--complement-tint-light);
+  --shadow-1: var(--shadow-1-light);
+  --shadow-2: var(--shadow-2-light);
+  --shadow-3: var(--shadow-3-light);
+
+  /* ---- Tipografía ---- */
+  --font-display: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Cascadia Code', Consolas, monospace;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.18vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-md: clamp(1.125rem, 1.06rem + 0.3vw, 1.25rem);
+  --text-lg: clamp(1.375rem, 1.24rem + 0.6vw, 1.625rem);
+  --text-xl: clamp(1.75rem, 1.5rem + 1.1vw, 2.25rem);
+  --text-2xl: clamp(2.25rem, 1.85rem + 1.8vw, 3rem);
+  --text-3xl: clamp(2.75rem, 2.2rem + 2.6vw, 3.75rem);
+  --text-4xl: clamp(3.25rem, 2.5rem + 3.6vw, 4.75rem);
+
+  --leading-tight: 1.1; --leading-snug: 1.25; --leading-normal: 1.5; --leading-relaxed: 1.65;
+  --tracking-display: -0.015em; --tracking-caps: 0.12em; --tracking-mono: 0.02em;
+
+  /* ---- Espaciado (base 4 px), radios, bordes, movimiento ---- */
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+  --space-12: 3rem; --space-16: 4rem;
+  --space-section: clamp(3rem, 6vw, 5rem);
+  --measure: 68ch;
+
+  --radius-s: 4px; --radius-m: 8px; --radius-l: 12px; --radius-full: 999px;
+  --border-w: 1px; --border-w-strong: 2px;
+
+  --duration-fast: 120ms; --duration-base: 200ms; --duration-slow: 320ms;
+  --ease: cubic-bezier(.2, .7, .3, 1);
+
+  /* ---- Logotipo (medido sobre el SVG aprobado) ---- */
+  --logo-ratio: 1.615;          /* ancho / alto del logotipo completo */
+  --logo-clearspace: 1x;        /* x = altura del anillo = 40.53 u */
+  --logo-min-digital: 96px;     /* ancho mínimo del logotipo completo en pantalla */
+  --logo-min-print: 24mm;
+
+  color-scheme: light dark;
+  accent-color: var(--color-primary);
+}
+
+/* Fallback para navegadores sin light-dark(): sigue la preferencia del sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--bg-dark);
+    --color-surface: var(--surface-dark);
+    --color-sunken: var(--sunken-dark);
+    --color-raised: var(--raised-dark);
+    --color-text: var(--text-dark);
+    --color-text-secondary: var(--text-2-dark);
+    --color-text-muted: var(--text-3-dark);
+    --color-primary: var(--primary-dark);
+    --color-primary-hover: var(--primary-hover-dark);
+    --color-on-primary: var(--on-primary-dark);
+    --color-primary-tint: var(--primary-tint-dark);
+    --color-on-primary-tint: var(--on-tint-dark);
+    --color-border: var(--border-dark);
+    --color-line: var(--line-dark);
+    --color-focus: var(--primary-dark);
+    --color-success-text: var(--success-text-dark);
+    --color-success-tint: var(--success-tint-dark);
+    --color-warning-text: var(--warning-text-dark);
+    --color-warning-tint: var(--warning-tint-dark);
+    --color-error-text: var(--error-text-dark);
+    --color-error-tint: var(--error-tint-dark);
+    --color-info-text: var(--primary-dark);
+    --color-info-tint: var(--primary-tint-dark);
+    --color-accent-text: var(--accent-text-dark);
+    --color-accent-tint: var(--accent-tint-dark);
+    --color-complement-text: var(--complement-text-dark);
+    --color-complement-tint: var(--complement-tint-dark);
+    --shadow-1: var(--shadow-1-dark);
+    --shadow-2: var(--shadow-2-dark);
+    --shadow-3: var(--shadow-3-dark);
+  }
+}
+
+/* Navegadores modernos: light-dark() sigue color-scheme (incl. override del toggle) */
+@supports (color: light-dark(white, black)) {
+  :root {
+    --color-bg: light-dark(var(--bg-light), var(--bg-dark));
+    --color-surface: light-dark(var(--surface-light), var(--surface-dark));
+    --color-sunken: light-dark(var(--sunken-light), var(--sunken-dark));
+    --color-raised: light-dark(var(--raised-light), var(--raised-dark));
+    --color-text: light-dark(var(--text-light), var(--text-dark));
+    --color-text-secondary: light-dark(var(--text-2-light), var(--text-2-dark));
+    --color-text-muted: light-dark(var(--text-3-light), var(--text-3-dark));
+    --color-primary: light-dark(var(--primary-light), var(--primary-dark));
+    --color-primary-hover: light-dark(var(--primary-hover-light), var(--primary-hover-dark));
+    --color-on-primary: light-dark(var(--on-primary-light), var(--on-primary-dark));
+    --color-primary-tint: light-dark(var(--primary-tint-light), var(--primary-tint-dark));
+    --color-on-primary-tint: light-dark(var(--on-tint-light), var(--on-tint-dark));
+    --color-border: light-dark(var(--border-light), var(--border-dark));
+    --color-line: light-dark(var(--line-light), var(--line-dark));
+    --color-focus: light-dark(var(--primary-light), var(--primary-dark));
+    --color-success-text: light-dark(var(--success-text-light), var(--success-text-dark));
+    --color-success-tint: light-dark(var(--success-tint-light), var(--success-tint-dark));
+    --color-warning-text: light-dark(var(--warning-text-light), var(--warning-text-dark));
+    --color-warning-tint: light-dark(var(--warning-tint-light), var(--warning-tint-dark));
+    --color-error-text: light-dark(var(--error-text-light), var(--error-text-dark));
+    --color-error-tint: light-dark(var(--error-tint-light), var(--error-tint-dark));
+    --color-info-text: light-dark(var(--primary-light), var(--primary-dark));
+    --color-info-tint: light-dark(var(--primary-tint-light), var(--primary-tint-dark));
+    --color-accent-text: light-dark(var(--accent-text-light), var(--accent-text-dark));
+    --color-accent-tint: light-dark(var(--accent-tint-light), var(--accent-tint-dark));
+    --color-complement-text: light-dark(var(--complement-text-light), var(--complement-text-dark));
+    --color-complement-tint: light-dark(var(--complement-tint-light), var(--complement-tint-dark));
+    --shadow-1: light-dark(var(--shadow-1-light), var(--shadow-1-dark));
+    --shadow-2: light-dark(var(--shadow-2-light), var(--shadow-2-dark));
+    --shadow-3: light-dark(var(--shadow-3-light), var(--shadow-3-dark));
+  }
+}
+
+/* Override manual del esquema (toggle del manual): el <meta> manda sobre el CSS.
+   Sin JS, el meta queda "light dark" y todo sigue al sistema. */
+:root:has(> head > meta[name="color-scheme"][content="dark"]) { color-scheme: dark; }
+:root:has(> head > meta[name="color-scheme"][content="light"]) { color-scheme: light; }
+
+/* Fallback del override para navegadores sin light-dark() pero con :has() */
+@supports not (color: light-dark(white, black)) {
+  :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+    --color-bg: var(--bg-dark);
+    --color-surface: var(--surface-dark);
+    --color-sunken: var(--sunken-dark);
+    --color-raised: var(--raised-dark);
+    --color-text: var(--text-dark);
+    --color-text-secondary: var(--text-2-dark);
+    --color-text-muted: var(--text-3-dark);
+    --color-primary: var(--primary-dark);
+    --color-primary-hover: var(--primary-hover-dark);
+    --color-on-primary: var(--on-primary-dark);
+    --color-primary-tint: var(--primary-tint-dark);
+    --color-on-primary-tint: var(--on-tint-dark);
+    --color-border: var(--border-dark);
+    --color-line: var(--line-dark);
+    --color-focus: var(--primary-dark);
+    --color-success-text: var(--success-text-dark);
+    --color-success-tint: var(--success-tint-dark);
+    --color-warning-text: var(--warning-text-dark);
+    --color-warning-tint: var(--warning-tint-dark);
+    --color-error-text: var(--error-text-dark);
+    --color-error-tint: var(--error-tint-dark);
+    --color-info-text: var(--primary-dark);
+    --color-info-tint: var(--primary-tint-dark);
+    --color-accent-text: var(--accent-text-dark);
+    --color-accent-tint: var(--accent-tint-dark);
+    --color-complement-text: var(--complement-text-dark);
+    --color-complement-tint: var(--complement-tint-dark);
+    --shadow-1: var(--shadow-1-dark);
+    --shadow-2: var(--shadow-2-dark);
+    --shadow-3: var(--shadow-3-dark);
+  }
+  :root:has(> head > meta[name="color-scheme"][content="light"]) {
+    --color-bg: var(--bg-light);
+    --color-surface: var(--surface-light);
+    --color-sunken: var(--sunken-light);
+    --color-raised: var(--raised-light);
+    --color-text: var(--text-light);
+    --color-text-secondary: var(--text-2-light);
+    --color-text-muted: var(--text-3-light);
+    --color-primary: var(--primary-light);
+    --color-primary-hover: var(--primary-hover-light);
+    --color-on-primary: var(--on-primary-light);
+    --color-primary-tint: var(--primary-tint-light);
+    --color-on-primary-tint: var(--on-tint-light);
+    --color-border: var(--border-light);
+    --color-line: var(--line-light);
+    --color-focus: var(--primary-light);
+    --color-success-text: var(--success-text-light);
+    --color-success-tint: var(--success-tint-light);
+    --color-warning-text: var(--warning-text-light);
+    --color-warning-tint: var(--warning-tint-light);
+    --color-error-text: var(--error-text-light);
+    --color-error-tint: var(--error-tint-light);
+    --color-info-text: var(--primary-light);
+    --color-info-tint: var(--primary-tint-light);
+    --color-accent-text: var(--accent-text-light);
+    --color-accent-tint: var(--accent-tint-light);
+    --color-complement-text: var(--complement-text-light);
+    --color-complement-tint: var(--complement-tint-light);
+    --shadow-1: var(--shadow-1-light);
+    --shadow-2: var(--shadow-2-light);
+    --shadow-3: var(--shadow-3-light);
+  }
+}
+
+/* ---- Utilidades de sistema ---- */
+.tnum { font-variant-numeric: tabular-nums; }
+.font-mono { font-family: var(--font-mono); letter-spacing: var(--tracking-mono); }
+.caps { text-transform: uppercase; letter-spacing: var(--tracking-caps); }
+
+/* Datos y código: siempre tabulares */
+table, .kpi, code, pre, .data { font-variant-numeric: tabular-nums; }
+
+/* Movimiento reducido: nada de animación no esencial */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Forced Colors: los bordes funcionales y el foco sobreviven con colores del sistema */
+@media (forced-colors: active) {
+  :root {
+    --color-border: ButtonBorder;
+    --color-line: GrayText;
+    --color-focus: Highlight;
+  }
+}

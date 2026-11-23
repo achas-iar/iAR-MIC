@@ -1,0 +1,166 @@
+{
+  "$meta": {
+    "name": "iAR Design Tokens",
+    "version": "1.0.0-propuesta",
+    "date": "2026-11-20",
+    "brand": "Industrial Augmented Reality S.L. (iAR)",
+    "primary": "#05677f",
+    "source": "brand-brief.md + assets/logo/iar-logo.svg",
+    "contrastStandard": "WCAG 2.2 — AA mínimo (4.5:1 texto, 3:1 UI), AAA donde es posible",
+    "note": "Los valores de contraste de $audit están calculados con luminancia relativa WCAG sobre los fondos indicados."
+  },
+  "color": {
+    "raw": {
+      "teal": {
+        "50": "#eef6f8", "100": "#d9ecf1", "200": "#b3d9e2", "300": "#82bfd0",
+        "400": "#4a9fb5", "500": "#1b839e", "600": "#05677f", "700": "#04566b",
+        "800": "#044556", "900": "#033340", "950": "#02222b",
+        "$600": "Color corporativo principal (fijado por dirección)."
+      },
+      "ink": {
+        "50": "#f6f7f7", "100": "#eef2f3", "200": "#d3dde0", "300": "#b9c8cc",
+        "400": "#8aa0a8", "500": "#75909a", "600": "#5b6d73", "700": "#33474f",
+        "800": "#1c3038", "900": "#0e1b20", "950": "#0c1a20"
+      },
+      "dark": {
+        "bg": "#0c1a20", "surface": "#10242d", "raised": "#16303a",
+        "line": "#24404c", "border": "#5b7684",
+        "text": "#e8f1f4", "text-secondary": "#a9c0c8", "text-muted": "#7fa2ae",
+        "primary": "#4cc3dd", "on-primary": "#06222c", "primary-tint": "#10303c"
+      },
+      "semantic": {
+        "success": { "solid": "#1a7f4e", "on-solid": "#ffffff", "text-light": "#176b43", "text-dark": "#45d08a", "tint-light": "#e9f5ee", "tint-dark": "#122b22" },
+        "warning": { "solid": "#e8a013", "on-solid": "#0e1b20", "text-light": "#8a5800", "text-dark": "#f0b429", "tint-light": "#fdf3dd", "tint-dark": "#2e2410" },
+        "error":   { "solid": "#b3261e", "on-solid": "#ffffff", "text-light": "#b3261e", "text-dark": "#ff8a80", "tint-light": "#fbeae8", "tint-dark": "#331a17" },
+        "info":    { "solid": "#05677f", "on-solid": "#ffffff", "text-light": "#05677f", "text-dark": "#4cc3dd", "tint-light": "#eef6f8", "tint-dark": "#10303c" },
+        "$solids": "Invariables entre modo claro y oscuro: se usan como relleno con su par on-solid verificado. El texto semántico inline usa la variante por modo."
+      },
+      "accent": {
+        "solid": "#22c0b4", "on-solid": "#06222c",
+        "text-light": "#0e7068", "text-dark": "#35d8cb",
+        "tint-light": "#e6f8f6", "tint-dark": "#113032",
+        "$role": "Azul/turquesa de acento para destacados de IA, métricas en tiempo real, foco secundario y elementos interactivos especiales."
+      },
+      "complement": {
+        "solid": "#d96b27", "on-solid": "#ffffff",
+        "text-light": "#9e4710", "text-dark": "#f59c62",
+        "tint-light": "#fdf1e8", "tint-dark": "#331e12",
+        "$role": "Color complementario cálido para contraste en gráficos comparativos, hitos de planta o llamadas de atención puntuales."
+      }
+    },
+    "semantic": {
+      "bg":             { "light": "#f6f7f7", "dark": "#0c1a20" },
+      "surface":        { "light": "#ffffff", "dark": "#10242d" },
+      "sunken":         { "light": "#eef2f3", "dark": "#0a161c" },
+      "raised":         { "light": "#ffffff", "dark": "#16303a" },
+      "text":           { "light": "#0e1b20", "dark": "#e8f1f4" },
+      "text-secondary": { "light": "#33474f", "dark": "#a9c0c8" },
+      "text-muted":     { "light": "#5b6d73", "dark": "#7fa2ae" },
+      "primary":        { "light": "#05677f", "dark": "#4cc3dd" },
+      "primary-hover":  { "light": "#04566b", "dark": "#6fd0e4" },
+      "on-primary":     { "light": "#ffffff", "dark": "#06222c" },
+      "primary-tint":   { "light": "#eef6f8", "dark": "#10303c" },
+      "on-primary-tint":{ "light": "#04566b", "dark": "#b3d9e2" },
+      "accent-text":    { "light": "#0e7068", "dark": "#35d8cb" },
+      "accent-tint":    { "light": "#e6f8f6", "dark": "#113032" },
+      "complement-text":{ "light": "#9e4710", "dark": "#f59c62" },
+      "complement-tint":{ "light": "#fdf1e8", "dark": "#331e12" },
+      "border":         { "light": "#75909a", "dark": "#5b7684", "$role": "Bordes funcionales de componentes (≥3:1)." },
+      "line":           { "light": "#d3dde0", "dark": "#24404c", "$role": "Filetes decorativos; nunca como único indicador de estado o borde de input." },
+      "focus":          { "light": "#05677f", "dark": "#4cc3dd" }
+    },
+    "$audit": [
+      { "pair": ["#05677f", "#ffffff"], "ratio": 6.46, "level": "AA" },
+      { "pair": ["#05677f", "#f6f7f7"], "ratio": 6.01, "level": "AA" },
+      { "pair": ["#0e1b20", "#ffffff"], "ratio": 17.55, "level": "AAA" },
+      { "pair": ["#33474f", "#ffffff"], "ratio": 9.74, "level": "AAA" },
+      { "pair": ["#5b6d73", "#ffffff"], "ratio": 5.41, "level": "AA" },
+      { "pair": ["#5b6d73", "#f6f7f7"], "ratio": 5.04, "level": "AA" },
+      { "pair": ["#ffffff", "#05677f"], "ratio": 6.46, "level": "AA" },
+      { "pair": ["#e8f1f4", "#0c1a20"], "ratio": 15.47, "level": "AAA" },
+      { "pair": ["#a9c0c8", "#0c1a20"], "ratio": 9.34, "level": "AAA" },
+      { "pair": ["#7fa2ae", "#0c1a20"], "ratio": 6.49, "level": "AA" },
+      { "pair": ["#7fa2ae", "#10242d"], "ratio": 5.85, "level": "AA" },
+      { "pair": ["#4cc3dd", "#0c1a20"], "ratio": 8.58, "level": "AAA" },
+      { "pair": ["#4cc3dd", "#10242d"], "ratio": 7.74, "level": "AAA" },
+      { "pair": ["#06222c", "#4cc3dd"], "ratio": 7.98, "level": "AAA" },
+      { "pair": ["#ffffff", "#1a7f4e"], "ratio": 5.01, "level": "AA" },
+      { "pair": ["#0e1b20", "#e8a013"], "ratio": 7.92, "level": "AAA" },
+      { "pair": ["#ffffff", "#b3261e"], "ratio": 6.54, "level": "AA" },
+      { "pair": ["#06222c", "#22c0b4"], "ratio": 7.64, "level": "AAA" },
+      { "pair": ["#0e7068", "#ffffff"], "ratio": 5.95, "level": "AA" },
+      { "pair": ["#35d8cb", "#0c1a20"], "ratio": 9.92, "level": "AAA" },
+      { "pair": ["#ffffff", "#d96b27"], "ratio": 3.55, "level": "UI/Large" },
+      { "pair": ["#9e4710", "#ffffff"], "ratio": 6.48, "level": "AA" },
+      { "pair": ["#f59c62", "#0c1a20"], "ratio": 8.12, "level": "AAA" },
+      { "pair": ["#176b43", "#ffffff"], "ratio": 6.52, "level": "AA" },
+      { "pair": ["#45d08a", "#0c1a20"], "ratio": 8.99, "level": "AAA" },
+      { "pair": ["#8a5800", "#ffffff"], "ratio": 6.04, "level": "AA" },
+      { "pair": ["#f0b429", "#0c1a20"], "ratio": 9.51, "level": "AAA" },
+      { "pair": ["#ff8a80", "#0c1a20"], "ratio": 7.77, "level": "AAA" },
+      { "pair": ["#75909a", "#ffffff"], "ratio": 3.38, "level": "UI 3:1" },
+      { "pair": ["#5b7684", "#0c1a20"], "ratio": 3.69, "level": "UI 3:1" }
+    ]
+  },
+  "typography": {
+    "families": {
+      "display": { "value": "'Sora', 'Segoe UI', system-ui, sans-serif", "role": "Titulares, portadas, cifras destacadas", "weights": [600, 700, 800], "license": "OFL (Google Fonts)" },
+      "body": { "value": "'Source Sans 3', 'Segoe UI', system-ui, sans-serif", "role": "Cuerpo de texto, UI, etiquetas", "weights": [400, 600], "license": "OFL (Google Fonts)" },
+      "mono": { "value": "'IBM Plex Mono', 'Cascadia Code', Consolas, monospace", "role": "Datos, métricas (tabular-nums), código, tokens, etiquetas técnicas", "weights": [400, 500], "license": "OFL (Google Fonts)" }
+    },
+    "scale": {
+      "$note": "Escala modular fluida (razón ≈1.25) entre 360 px y 1440 px de viewport; base 16 px.",
+      "xs":  { "min": "0.75rem",  "fluid": "0.72rem + 0.15vw",  "max": "0.8125rem", "px": [12, 13] },
+      "sm":  { "min": "0.875rem", "fluid": "0.84rem + 0.18vw",  "max": "0.9375rem", "px": [14, 15] },
+      "base":{ "min": "1rem",     "fluid": "0.96rem + 0.2vw",   "max": "1.0625rem", "px": [16, 17] },
+      "md":  { "min": "1.125rem", "fluid": "1.06rem + 0.3vw",   "max": "1.25rem",   "px": [18, 20] },
+      "lg":  { "min": "1.375rem", "fluid": "1.24rem + 0.6vw",   "max": "1.625rem",  "px": [22, 26] },
+      "xl":  { "min": "1.75rem",  "fluid": "1.5rem + 1.1vw",    "max": "2.25rem",   "px": [28, 36] },
+      "2xl": { "min": "2.25rem",  "fluid": "1.85rem + 1.8vw",   "max": "3rem",      "px": [36, 48] },
+      "3xl": { "min": "2.75rem",  "fluid": "2.2rem + 2.6vw",    "max": "3.75rem",   "px": [44, 60] },
+      "4xl": { "min": "3.25rem",  "fluid": "2.5rem + 3.6vw",    "max": "4.75rem",   "px": [52, 76] }
+    },
+    "leading": { "tight": 1.1, "snug": 1.25, "normal": 1.5, "relaxed": 1.65 },
+    "tracking": { "display": "-0.015em", "body": "0", "caps": "0.12em", "mono": "0.02em" },
+    "data": { "fontVariantNumeric": "tabular-nums", "rule": "Toda cifra en tablas, KPIs y comparativas usa mono o body con tabular-nums; nunca cifras proporcionales en columnas." }
+  },
+  "spacing": {
+    "$base": "4px",
+    "1": "0.25rem", "2": "0.5rem", "3": "0.75rem", "4": "1rem", "5": "1.25rem",
+    "6": "1.5rem", "8": "2rem", "10": "2.5rem", "12": "3rem", "16": "4rem",
+    "section": "clamp(3rem, 6vw, 5rem)",
+    "measure": "68ch",
+    "$rule": "Más aire sobre un titular que bajo él; ritmo constante por sección."
+  },
+  "radii": { "s": "4px", "m": "8px", "l": "12px", "full": "999px", "$rule": "Radios contenidos (4/8) de registro industrial; full solo en badges y avatares." },
+  "borders": { "w": "1px", "w-strong": "2px" },
+  "shadows": {
+    "1": { "light": "0 1px 2px rgb(14 27 32 / 0.08), 0 1px 1px rgb(14 27 32 / 0.04)", "dark": "0 1px 2px rgb(0 0 0 / 0.4)" },
+    "2": { "light": "0 4px 12px rgb(14 27 32 / 0.10)", "dark": "0 4px 12px rgb(0 0 0 / 0.45)" },
+    "3": { "light": "0 12px 32px rgb(14 27 32 / 0.16)", "dark": "0 12px 32px rgb(0 0 0 / 0.55)" }
+  },
+  "motion": {
+    "fast": "120ms", "base": "200ms", "slow": "320ms",
+    "ease": "cubic-bezier(0.2, 0.7, 0.3, 1)",
+    "$rule": "Solo opacity/transform; prefers-reduced-motion reduce desactiva toda animación no esencial."
+  },
+  "logo": {
+    "geometry": {
+      "viewBox": "0 0 200 100",
+      "fullBBox": { "w": 155.07, "h": 96.04, "ratio": 1.615 },
+      "ring": { "diameter": 40.53, "center": [42.25, 22.23] },
+      "cross": { "size": 21.93, "arm": 6.03, "center": [42.23, 22.23] },
+      "$note": "Medido por muestreo de las curvas del SVG aprobado; anillo y cruz concéntricos."
+    },
+    "clearspace": { "value": "1x", "x": "altura del anillo (40.53 u)", "rule": "Perímetro libre de texto, bordes y otros logotipos en todas las versiones." },
+    "minSize": { "digitalFull": "96px de ancho", "digitalIsotipo": "24px", "printFull": "24mm de ancho", "printIsotipo": "6mm" },
+    "versions": ["principal (teal)", "monocroma tinta", "negativo (blanco)", "isotipo (icono de app y favicon)"],
+    "files": {
+      "primary": "assets/logo/iar-logo.svg",
+      "monoInk": "assets/logo/iar-logo-mono-ink.svg",
+      "negative": "assets/logo/iar-logo-negative.svg",
+      "isotipo": "assets/logo/iar-isotipo.svg",
+      "isotipoNegative": "assets/logo/iar-isotipo-negative.svg"
+    }
+  }
+}

@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script>
+/* Solo anti-FOUC: aplica el override guardado antes del primer pintado. */
+try { document.querySelector('meta[name="color-scheme"]').content = localStorage.getItem('iar-color-scheme') || 'light dark'; } catch (e) {}
+</script>
+<title>iAR · Manual de Identidad Corporativa 2027</title>
+<meta name="description" content="Manual de identidad corporativa y sistema de diseño de Industrial Augmented Reality S.L. (iAR): logotipo, color, tipografía, componentes UI y plantillas de presentación. Propuesta rev 1.0.">
+<link rel="icon" type="image/svg+xml" href="assets/logo/iar-isotipo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens/tokens.css">
+<link rel="stylesheet" href="css/manual.css">
+</head>
+<body>
+
+<!-- Sprite: arte aprobado del logotipo (solo recolor/ recorte) + iconos dibujados (trazo 1.75) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo-full" viewBox="0 0 200 100">
+      <path fill="currentColor" d="M28.41 97.91 C28.41 94.313 28.42 90.422 28.42 86.76 C31.036 86.76 33.51 86.7 36.04 86.71 C36.08 77.02 36.05 67.3 36.05 57.6 C33.54 57.53 30.98 57.56 28.46 57.58 C28.52 54.74 28.53 51.88 28.45 49.03 C35.784 49.03 42.959 48.94 50.34 48.94 C50.42 58.24 50.35 67.68 50.38 77 C50.36 80.23 50.42 83.47 50.35 86.69 C52.798 86.69 55.038 86.69 57.289 86.69 C57.699 85.41 58.19 83.97 58.65 82.7 C66.3 61.61 74 40.53 81.64 19.44 C85.67 19.26 89.74 19.46 93.77 19.34 L117.56 83.761 C117.51 82.084 117.46 80.61 117.44 79 L117.44 38 C117.52 31.85 117.56 25.38 117.56 19.27 L148.83 19.38 C160.64 19.49 170.56 26.05 173.23 37.89 C175.58 49.57 170.82 59.78 159.54 64.13 C165.32 75.41 171.21 86.71 177.05 97.98 C171.09 98.01 165.09 98.02 159.13 97.97 C154.12 87.54 148.92 77.19 143.92 66.75 C140.27 66.63 136.54 66.69 132.89 66.72 C132.89 77.11 132.84 87.58 132.91 97.97 C124.67 98.04 116.3 97.98 108.06 98 L106.3 97.91 C104.95 93.29 103.23 88.75 101.81 84.14 C92.53 84.1 83.22 84.16 73.94 84.11 C72.4 88.65 70.69 93.26 69.32 97.85 Z M132.89 33.11 C132.87 40.01 132.86 46.93 132.9 53.83 C138.08 53.71 143.67 53.97 148.79 53.71 C161.9 52.51 161.72 33.58 147.85 33.14 C142.92 33.08 137.84 33.17 132.89 33.11 Z M78.22 71.11 C84.72 71.13 91.22 71.14 97.72 71.1 C96.53 67.95 95.55 64.71 94.45 61.52 C92.44 55.4 90.15 49.06 88.29 42.93 Z"/>
+      <path fill="currentColor" d="M22.62 27.32 C17.86 7.74 40.69 -6.07 55.82 7.19 C70.26 20.55 59.66 44.26 40.07 42.39 C31.72 41.53 24.71 35.44 22.62 27.32 Z M26.89 22.02 C26.9 37.59 46.9 43.5 55.31 30.29 C58.29 25.48 58.37 19.42 55.51 14.53 C47.48 1.15 27.34 6.47 26.89 22.02 Z"/>
+      <path fill="currentColor" d="M39.25 11.29 C41.23 11.32 43.22 11.35 45.21 11.26 C45.28 13.9 45.27 16.57 45.21 19.21 C47.85 19.28 50.52 19.26 53.16 19.21 C53.21 21.22 53.19 23.22 53.17 25.23 C50.53 25.27 47.88 25.26 45.24 25.24 C45.26 27.88 45.27 30.53 45.23 33.17 C43.22 33.19 41.22 33.21 39.21 33.16 C39.26 30.52 39.28 27.85 39.21 25.21 C36.553 25.21 33.949 25.21 31.26 25.21 C31.26 23.213 31.29 21.259 31.29 19.25 C33.93 19.24 36.58 19.27 39.22 19.22 C39.27 16.58 39.24 13.93 39.25 11.29 Z"/>
+    </symbol>
+    <symbol id="logo-iso" viewBox="18.25 -1.77 48 48">
+      <path fill="currentColor" d="M22.62 27.32 C17.86 7.74 40.69 -6.07 55.82 7.19 C70.26 20.55 59.66 44.26 40.07 42.39 C31.72 41.53 24.71 35.44 22.62 27.32 Z M26.89 22.02 C26.9 37.59 46.9 43.5 55.31 30.29 C58.29 25.48 58.37 19.42 55.51 14.53 C47.48 1.15 27.34 6.47 26.89 22.02 Z"/>
+      <path fill="currentColor" d="M39.25 11.29 C41.23 11.32 43.22 11.35 45.21 11.26 C45.28 13.9 45.27 16.57 45.21 19.21 C47.85 19.28 50.52 19.26 53.16 19.21 C53.21 21.22 53.19 23.22 53.17 25.23 C50.53 25.27 47.88 25.26 45.24 25.24 C45.26 27.88 45.27 30.53 45.23 33.17 C43.22 33.19 41.22 33.21 39.21 33.16 C39.26 30.52 39.28 27.85 39.21 25.21 C36.553 25.21 33.949 25.21 31.26 25.21 C31.26 23.213 31.29 21.259 31.29 19.25 C33.93 19.24 36.58 19.27 39.22 19.22 C39.27 16.58 39.24 13.93 39.25 11.29 Z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.5 21 19.5H3Z"/><path d="M12 10v4"/><path d="M12 16.8v.2"/></symbol>
+    <symbol id="i-error" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.5 9.5l5 5M14.5 9.5l-5 5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><path d="M12 7.8v.2"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 13.5A8 8 0 1 1 10.5 4a6.5 6.5 0 0 0 9.5 9.5Z"/></symbol>
+    <symbol id="i-system" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M6.5 10.5 12 16l5.5-5.5M4 20h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke-dasharray="40 14"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2Z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M2 12l10 5 10-5"/><path d="M2 16l10 5 10-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5l3.2 2"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#lamina-00">
+      <svg class="brand-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+      <span class="brand-text">iAR <span class="brand-sep">·</span> Manual de Identidad <span class="tnum">2027</span></span>
+    </a>
+    <div class="topbar-actions">
+      <span class="rev-chip font-mono">REV 1.0 · PROPUESTA</span>
+      <button class="icon-btn" type="button" id="scheme-reset" hidden>
+        <svg class="icon" aria-hidden="true"><use href="#i-system"/></svg>
+        <span>Sistema</span>
+      </button>
+      <button class="icon-btn" type="button" id="scheme-toggle" aria-label="Cambiar a tema oscuro">
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <span class="visually-hidden scheme-label">Cambiar a tema oscuro</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="indice" id="indice" aria-label="Índice de láminas">
+    <p class="indice-title font-mono caps">Índice de hojas</p>
+    <ol>
+      <li><a href="#lamina-00"><span class="n font-mono">00</span><span class="t">Portada y fundamentos</span></a></li>
+      <li><a href="#lamina-01"><span class="n font-mono">01</span><span class="t">Marca y arquitectura</span></a></li>
+      <li><a href="#lamina-02"><span class="n font-mono">02</span><span class="t">Logotipo</span></a></li>
+      <li><a href="#lamina-03"><span class="n font-mono">03</span><span class="t">Color</span></a></li>
+      <li><a href="#lamina-04"><span class="n font-mono">04</span><span class="t">Tipografía</span></a></li>
+      <li><a href="#lamina-05"><span class="n font-mono">05</span><span class="t">Componentes UI</span></a></li>
+      <li><a href="#lamina-06"><span class="n font-mono">06</span><span class="t">Presentaciones</span></a></li>
+      <li><a href="#lamina-07"><span class="n font-mono">07</span><span class="t">Voz, idiomas y descargas</span></a></li>
+    </ol>
+    <p class="indice-foot font-mono">iAR-MIC-2027<br>8 láminas · rev 1.0</p>
+  </nav>
+
+  <main id="contenido">
+
+    <!-- ============ LÁMINA 00 ============ -->
+    <section class="lamina" id="lamina-00" tabindex="-1" aria-labelledby="t-00">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 00/07</span>
+        <h2 id="t-00">Manual de Identidad Corporativa <span class="tnum">2027</span></h2>
+        <span class="head-meta font-mono">ESCALA 1:1 · REV 1.0</span>
+      </header>
+      <div class="lamina-body body-00">
+        <figure class="plate plate-drawing">
+          <div class="plate-stage" tabindex="0" role="region" aria-label="Lámina acotada: desplázate horizontalmente para verla completa">
+            <svg class="cota-svg" id="plano-00" viewBox="-70 -70 360 240" role="img" aria-label="Logotipo iAR acotado: retícula de 200 por 100 unidades, área de respeto de una x, anillo de 40,5 unidades">
+              <defs><pattern id="hatch00" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8 L8 0" stroke="currentColor" stroke-width="1" opacity=".28"/></pattern></defs>
+              <g class="cotas">
+                <rect x="-40.5" y="-40.5" width="281" height="181" fill="url(#hatch00)" stroke="none"/>
+                <rect x="0" y="0" width="200" height="100" fill="var(--color-surface)" stroke="none"/>
+                <g class="reticula" stroke="currentColor" stroke-width=".6" opacity=".16">
+                  <path d="M20 0V100M40 0V100M60 0V100M80 0V100M100 0V100M120 0V100M140 0V100M160 0V100M180 0V100M0 20H200M0 40H200M0 60H200M0 80H200"/>
+                </g>
+                <g class="dim" stroke="currentColor" stroke-width="1" fill="none">
+                  <path d="M0 -56H200M0 -61V-51M200 -61V-51"/>
+                  <path d="M-56 0V100M-61 0H-51M-61 100H-51"/>
+                  <path d="M-40.5 -21H0M-40.5 -26V-16M0 -26V-16"/>
+                </g>
+                <g class="dim-label font-mono" fill="currentColor" stroke="none" font-size="10">
+                  <text x="88" y="-62">200 u</text>
+                  <text x="-66" y="55" transform="rotate(-90 -66 55)">100 u</text>
+                  <text x="-25" y="-27">x</text>
+                </g>
+              </g>
+              <g class="logo-arte" color="var(--color-primary)"><use href="#logo-full" x="0" y="0" width="200" height="100"/></g>
+              <g class="leader" stroke="currentColor" stroke-width="1" fill="none">
+                <path d="M55 6 L120 -30 H190"/><path d="M42.25 42.5V128H66"/>
+              </g>
+              <g class="leader-label font-mono" fill="currentColor" font-size="10">
+                <text x="194" y="-27">anillo Ø 40,5 u</text>
+                <text x="70" y="131">x = 40,5 u · área de respeto</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 00.1 · Logotipo principal acotado</span><span>u = retícula 200 × 100</span></figcaption>
+        </figure>
+        <aside class="notas">
+          <h3 class="notas-title">Cómo leer esta guía</h3>
+          <p>Este manual reúne la identidad visual de <b>iAR</b> —Industrial Augmented Reality S.L.— bajo una única marca clara y coherente, pensada tanto para entornos industriales como para soluciones digitales y de inteligencia artificial.</p>
+          <p>Está redactado de forma directa para que cualquier persona del equipo, colaborador o proveedor pueda consultarlo y aplicar la marca con facilidad en presentaciones, documentos o interfaces.</p>
+          <ul class="notas-list">
+            <li><span class="n font-mono">01</span><span>Cada apartado se presenta como una <b>lámina</b> visual con ejemplos prácticos listos para usar.</span></li>
+            <li><span class="n font-mono">02</span><span>Los colores y códigos pueden <b>copiarse con un clic</b> para llevarlos a cualquier herramienta.</span></li>
+            <li><span class="n font-mono">03</span><span>El botón superior permite alternar entre <b>modo claro y modo oscuro</b> para ver cómo se adapta toda la identidad.</span></li>
+          </ul>
+          <p class="credenciales">Pyme Innovadora · Microsoft Partner<br>Pamplona (ES) — Castres (FR)</p>
+        </aside>
+      </div>
+      <div class="prose">
+        <p class="tagline">Applied AI and digital solutions for business and industry.</p>
+        <p>Más de quince años aplicando tecnología: inteligencia artificial generativa y predictiva, software a medida, digitalización industrial, AR/VR/MR y productividad empresarial. La identidad de 2027 equilibra los dos mundos donde iAR trabaja: la fiabilidad operativa de la planta y la claridad limpia del software moderno.</p>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 00">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">00 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">1:1 (u)</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <span class="hoja-prev-empty"></span>
+          <a class="btn btn-secondary btn-s" href="#lamina-01">Siguiente lámina · 01 Marca <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 01 ============ -->
+    <section class="lamina" id="lamina-01" tabindex="-1" aria-labelledby="t-01">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 01/07</span>
+        <h2 id="t-01">Marca única y arquitectura</h2>
+        <span class="head-meta font-mono">REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Toda nuestra actividad comercial, técnica y de producto se centraliza bajo una sola marca: <b>iAR</b>. No utilizamos submarcas ni logotipos distintos para cada línea o solución. Ya sea en una plataforma de inteligencia artificial, en una aplicación móvil de planta o en una propuesta comercial, la firma es siempre <b>iAR</b> acompañada de un descriptor claro del área o servicio.</p>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-diagram">
+          <svg viewBox="0 0 720 260" role="img" aria-label="Arquitectura de marca centralizada: iAR como marca única para todas las áreas de solución">
+            <g font-family="Sora, sans-serif" font-weight="700">
+              <rect x="240" y="14" width="240" height="60" rx="8" fill="var(--color-primary)"/>
+              <text x="360" y="51" text-anchor="middle" font-size="26" fill="var(--color-on-primary)">iAR</text>
+              <g font-size="14" font-weight="600">
+                <rect x="20" y="140" width="155" height="64" rx="8" fill="var(--color-surface)" stroke="var(--color-border)"/>
+                <text x="97.5" y="168" text-anchor="middle" fill="var(--color-text)">Inteligencia Artificial</text>
+                <text x="97.5" y="188" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="12" font-weight="400" fill="var(--color-text-muted)">Agentes, visión y datos</text>
+
+                <rect x="195" y="140" width="155" height="64" rx="8" fill="var(--color-surface)" stroke="var(--color-border)"/>
+                <text x="272.5" y="168" text-anchor="middle" fill="var(--color-text)">Planta y Calidad</text>
+                <text x="272.5" y="188" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="12" font-weight="400" fill="var(--color-text-muted)">GMAO, OEE y mejora</text>
+
+                <rect x="370" y="140" width="155" height="64" rx="8" fill="var(--color-surface)" stroke="var(--color-border)"/>
+                <text x="447.5" y="168" text-anchor="middle" fill="var(--color-text)">Software y Cloud</text>
+                <text x="447.5" y="188" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="12" font-weight="400" fill="var(--color-text-muted)">Portales, BI y gestión</text>
+
+                <rect x="545" y="140" width="155" height="64" rx="8" fill="var(--color-surface)" stroke="var(--color-border)"/>
+                <text x="622.5" y="168" text-anchor="middle" fill="var(--color-text)">Movilidad y XR</text>
+                <text x="622.5" y="188" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="12" font-weight="400" fill="var(--color-text-muted)">AR/VR e inspección</text>
+              </g>
+            </g>
+            <g stroke="var(--color-border)" stroke-width="1.5" fill="none">
+              <path d="M360 74V108M97.5 108H622.5M97.5 108V140M272.5 108V140M447.5 108V140M622.5 108V140"/>
+            </g>
+            <text x="360" y="236" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="13" fill="var(--color-text-secondary)">Una sola identidad visual y un único logotipo para todas las soluciones de la compañía</text>
+          </svg>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 01.1 · Arquitectura centralizada</span><span>marca única iAR en todas las soluciones</span></figcaption>
+      </figure>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-naming">
+        <table>
+          <caption id="cap-naming">Cómo escribir la marca y nombrar nuestras soluciones</caption>
+          <thead><tr><th scope="col">Elemento</th><th scope="col">Forma correcta</th><th scope="col">Evitar</th><th scope="col">Criterio</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Marca comercial</th><td><b>iAR</b></td><td>IAR, iar, Iar</td><td>La «i» inicial siempre en minúscula y «AR» en mayúsculas</td></tr>
+            <tr><th scope="row">Razón social</th><td>Industrial Augmented Reality S.L.</td><td>I.A.R. S.L.</td><td>En contratos, avisos legales y pie oficial</td></tr>
+            <tr><th scope="row">Soluciones y módulos</th><td>iAR · <span class="text-muted">Descriptor funcional</span></td><td>Nombres de submarcas aislados</td><td>Se acompaña de la función (p. ej. «iAR · Control de planta»)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-lockup">
+            <div class="lockup"><svg class="lockup-iso" aria-hidden="true"><use href="#logo-iso"/></svg><span class="lockup-name">iAR <span class="lockup-tld">· Planta y GMAO</span></span></div>
+            <div class="lockup"><svg class="lockup-iso" aria-hidden="true"><use href="#logo-iso"/></svg><span class="lockup-name">iAR <span class="lockup-tld">· Inteligencia Artificial</span></span></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 01.2 · Identificación en aplicaciones</span><span>isotipo + iAR + descriptor de área</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-lockup">
+            <div class="lockup"><svg class="lockup-full" aria-hidden="true"><use href="#logo-full"/></svg><span class="lockup-sep" aria-hidden="true"></span><span class="partner-slot">Sello de partner<br><small>arte oficial provisto por Microsoft</small></span></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 01.3 · Convivencia con sellos</span><span>separación mínima de 1x fuera del área</span></figcaption>
+        </figure>
+      </div>
+      <div class="prose">
+        <h3>Criterios de aplicación</h3>
+        <ul class="reglas">
+          <li><b>01.1</b><span class="regla-body">Todas las aplicaciones, portales y documentos utilizan siempre el logotipo o el isotipo oficial de <b>iAR</b>.</span></li>
+          <li><b>01.2</b><span class="regla-body">Para identificar una herramienta o área concreta en cabeceras de software, se escribe <b>iAR</b> seguido de un descriptor claro en Sora 600.</span></li>
+          <li><b>01.3</b><span class="regla-body">Los sellos de certificaciones y partners (como Microsoft Partner o Pyme Innovadora) se sitúan respetando el margen de seguridad y siempre con sus archivos oficiales.</span></li>
+        </ul>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 01">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">01 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">—</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-00"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 00 Portada</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-02">02 Logotipo <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 02 ============ -->
+    <section class="lamina" id="lamina-02" tabindex="-1" aria-labelledby="t-02">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 02/07</span>
+        <h2 id="t-02">Logotipo: construcción y versiones</h2>
+        <span class="head-meta font-mono">ESCALA 1:1 · REV 1.0</span>
+      </header>
+      <div class="grid-2">
+        <figure class="plate plate-drawing">
+          <div class="plate-stage" tabindex="0" role="region" aria-label="Lámina acotada: desplázate horizontalmente para verla completa">
+            <svg class="cota-svg" viewBox="-14 -20 330 140" role="img" aria-label="Construcción del logotipo: anillo y cruz concéntricos, centros en 42,25 y 22,23">
+              <g class="reticula" stroke="currentColor" stroke-width=".6" opacity=".16"><path d="M20 0V100M40 0V100M60 0V100M80 0V100M100 0V100M120 0V100M140 0V100M160 0V100M180 0V100M0 20H200M0 40H200M0 60H200M0 80H200"/></g>
+              <g stroke="currentColor" stroke-width=".9" opacity=".6" stroke-dasharray="12 4 2 4" fill="none"><path d="M42.25 -10V56M10 22.23H74"/></g>
+              <g color="var(--color-primary)"><use href="#logo-full" width="200" height="100"/></g>
+              <g stroke="currentColor" stroke-width="1" fill="none"><path d="M53.19 11.26H150M150 11.26V-6"/><path d="M62.5 30H170"/></g>
+              <g class="font-mono" fill="currentColor" font-size="9.5">
+                <text x="154" y="-8">cruz 21,9 u · brazo 6 u</text>
+                <text x="174" y="33">centros concéntricos</text>
+                <text x="0" y="112">bbox 155,07 × 96,04 u · ratio 1,615</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 02.1 · Construcción</span><span>medido sobre el SVG aprobado</span></figcaption>
+        </figure>
+        <figure class="plate plate-drawing">
+          <div class="plate-stage" tabindex="0" role="region" aria-label="Lámina acotada: desplázate horizontalmente para verla completa">
+            <svg class="cota-svg" viewBox="-52 -52 304 212" role="img" aria-label="Área de respeto: perímetro de una x, la altura del anillo, libre de otros elementos">
+              <defs><pattern id="hatch02" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8 L8 0" stroke="currentColor" stroke-width="1" opacity=".28"/></pattern></defs>
+              <rect x="-40.5" y="-40.5" width="281" height="181" fill="url(#hatch02)"/>
+              <rect x="0" y="0" width="200" height="100" fill="var(--color-surface)"/>
+              <g color="var(--color-primary)"><use href="#logo-full" width="200" height="100"/></g>
+              <g stroke="currentColor" stroke-width="1" fill="none"><path d="M-40.5 -20H0M-40.5 -25V-15M0 -25V-15"/></g>
+              <text x="-25" y="-26" class="font-mono" fill="currentColor" font-size="10">x</text>
+              <text x="0" y="156" class="font-mono" fill="currentColor" font-size="10">x = altura del anillo = 40,5 u</text>
+            </svg>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 02.2 · Área de respeto</span><span>1x en todas las versiones</span></figcaption>
+        </figure>
+      </div>
+      <div class="prose">
+        <h3>Tamaños mínimos</h3>
+        <p>Por debajo del mínimo, el logotipo completo pierde la cruz del isotipo: se usa solo el isotipo, nunca el conjunto reducido. Reproducción a una tinta en impresión: versión monocroma.</p>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-min">
+          <div class="min-item"><svg style="width:96px" aria-hidden="true"><use href="#logo-full"/></svg><span><b>96 px</b> · mínimo digital completo</span></div>
+          <div class="min-item"><svg style="width:24px" aria-hidden="true"><use href="#logo-iso"/></svg><span><b>24 px</b> · isotipo y favicon</span></div>
+          <div class="min-item"><svg style="width:91px" aria-hidden="true"><use href="#logo-full"/></svg><span><b>24 mm</b> · mínimo impreso</span></div>
+          <div class="min-item"><svg style="width:23px" aria-hidden="true"><use href="#logo-iso"/></svg><span><b>6 mm</b> · isotipo impreso</span></div>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 02.3 · Tamaños mínimos a escala real</span><span>completo 96 px / 24 mm · isotipo 24 px / 6 mm</span></figcaption>
+      </figure>
+      <div class="grid-versions">
+        <figure class="plate"><div class="plate-stage stage-version" style="color:var(--iar-teal-600)"><svg class="v-logo" aria-hidden="true"><use href="#logo-full"/></svg></div><figcaption class="plate-cap font-mono"><span>Principal · teal</span><a href="assets/logo/iar-logo.svg" download>SVG</a></figcaption></figure>
+        <figure class="plate"><div class="plate-stage stage-version" style="color:var(--color-text)"><svg class="v-logo" aria-hidden="true"><use href="#logo-full"/></svg></div><figcaption class="plate-cap font-mono"><span>Monocroma tinta</span><a href="assets/logo/iar-logo-mono-ink.svg" download>SVG</a></figcaption></figure>
+        <figure class="plate"><div class="plate-stage stage-version stage-dark" style="color:#fff"><svg class="v-logo" aria-hidden="true"><use href="#logo-full"/></svg></div><figcaption class="plate-cap font-mono"><span>Negativo · fondos oscuros</span><a href="assets/logo/iar-logo-negative.svg" download>SVG</a></figcaption></figure>
+        <figure class="plate"><div class="plate-stage stage-version" style="color:var(--iar-teal-600)"><svg class="v-iso" aria-hidden="true"><use href="#logo-iso"/></svg></div><figcaption class="plate-cap font-mono"><span>Isotipo · app y favicon</span><a href="assets/logo/iar-isotipo.svg" download>SVG</a></figcaption></figure>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-dont">
+          <div class="dont"><div class="dont-art dont-stretch"><svg aria-hidden="true"><use href="#logo-full"/></svg></div><span class="dont-label"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Deformar o alterar proporciones</span></div>
+          <div class="dont"><div class="dont-art" style="color:#c2410c"><svg aria-hidden="true"><use href="#logo-full"/></svg></div><span class="dont-label"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Recolorear fuera de las versiones</span></div>
+          <div class="dont"><div class="dont-art dont-shadow"><svg aria-hidden="true"><use href="#logo-full"/></svg></div><span class="dont-label"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Sombras, biseles o efectos</span></div>
+          <div class="dont"><div class="dont-art dont-busy"><svg aria-hidden="true"><use href="#logo-full"/></svg></div><span class="dont-label"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Fondo sin contraste suficiente</span></div>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 02.4 · Usos incorrectos</span><span>el arte aprobado no se modifica</span></figcaption>
+      </figure>
+      <div class="prose">
+        <h3>Sobre fotografía y aplicaciones</h3>
+        <ul class="reglas">
+          <li><b>02.1</b><span class="regla-body">Sobre fotografía o vídeo: utiliza la versión negativa (blanca) o principal sobre una zona despejada donde se lea con claridad; si el fondo tiene mucho detalle, coloca una pastilla sólida detrás.</span></li>
+          <li><b>02.2</b><span class="regla-body">En aplicaciones y web: el <b>isotipo</b> (anillo con cruz) se utiliza en barras de navegación, iconos de aplicación y como <b>favicon</b> en el navegador. El logotipo completo se reserva para pantallas de acceso, portadas y documentos.</span></li>
+        </ul>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 02">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">02 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">1:1 (u)</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-01"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 01 Marca</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-03">03 Color <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 03 ============ -->
+    <section class="lamina" id="lamina-03" tabindex="-1" aria-labelledby="t-03">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 03/07</span>
+        <h2 id="t-03">Paleta de color</h2>
+        <span class="head-meta font-mono">CLARO / OSCURO · REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Nuestra paleta parte del <b>teal corporativo</b> <span class="copy"><code id="v-primary" class="font-mono">#05677F</code><button class="copy-button" type="button" command="--copy" commandfor="v-primary" aria-label="Copiar valor del color principal"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button><span class="tip" role="status"></span></span>, acompañado de grises fríos muy limpios. Para enriquecer presentaciones, gráficos y paneles sin perder sobriedad, sumamos un <b>azul turquesa de acento</b> <span class="copy"><code id="v-accent" class="font-mono">#22C0B4</code><button class="copy-button" type="button" command="--copy" commandfor="v-accent" aria-label="Copiar valor del azul de acento"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button><span class="tip" role="status"></span></span> y un <b>color complementario cálido</b> <span class="copy"><code id="v-comp" class="font-mono">#D96B27</code><button class="copy-button" type="button" command="--copy" commandfor="v-comp" aria-label="Copiar valor del color complementario"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button><span class="tip" role="status"></span></span> para usos puntuales.</p>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-primary">
+          <div class="primary-field">
+            <span class="pf-name">Teal corporativo · Principal</span>
+            <span class="pf-hex">#05677F</span>
+            <span class="pf-data">Color de marca, botones principales, enlaces y cabeceras.<br>Texto blanco encima para máxima claridad.</span>
+          </div>
+          <div class="primary-side">
+            <p class="font-mono">--color-primary · claro #05677F / oscuro #4CC3DD</p>
+            <p>En <b>modo oscuro</b> el color principal pasa automáticamente a una tonalidad más luminosa (<span class="font-mono">#4CC3DD</span>) con texto oscuro encima (<span class="font-mono">#06222C</span>), garantizando una lectura cómoda en entornos de planta o pantallas nocturnas.</p>
+          </div>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 03.1 · Color principal</span><span>identidad corporativa iAR</span></figcaption>
+      </figure>
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-accent-card">
+            <div class="accent-swatch" style="background:var(--iar-accent-solid);color:var(--iar-on-accent)">
+              <span class="ac-tag">Acento luminoso</span>
+              <strong class="ac-hex">#22C0B4</strong>
+              <span class="ac-sub">Azul turquesa de acento</span>
+            </div>
+            <div class="accent-info">
+              <h4>Casos de uso del azul de acento</h4>
+              <ul>
+                <li>Indicadores activos, métricas en tiempo real y asistentes o funciones de IA.</li>
+                <li>Resaltado de series principales en gráficos, barras de progreso y diagramas de flujo.</li>
+                <li>Detalles visuales sobre fondos oscuros o portadas en combinación con el teal corporativo.</li>
+              </ul>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 03.2 · Azul de acento (#22C0B4)</span><span>dinamismo, datos e IA</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-accent-card">
+            <div class="accent-swatch" style="background:var(--iar-complement-solid);color:var(--iar-on-complement)">
+              <span class="ac-tag">Complementario cálido</span>
+              <strong class="ac-hex">#D96B27</strong>
+              <span class="ac-sub">Ámbar / terracota industrial</span>
+            </div>
+            <div class="accent-info">
+              <h4>Casos de uso del color complementario</h4>
+              <ul>
+                <li>Segunda serie en gráficas comparativas (p. ej. <i>situación previa vs. objetivo</i> o <i>consumo vs. producción</i>).</li>
+                <li>Llamadas de atención puntuales o hitos clave en cronogramas y presentaciones.</li>
+                <li>Señalización visual en planos de planta o visores AR cuando se requiere contraste inmediato frente al azul.</li>
+              </ul>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 03.3 · Color complementario (#D96B27)</span><span>contraste puntual y comparativas</span></figcaption>
+        </figure>
+      </div>
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-scale">
+            <div class="scale-row" id="scale-teal"></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Escala teal · 50–950</span><span>clic para copiar el color</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-scale">
+            <div class="scale-row" id="scale-ink"></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Grises neutros · 50–950</span><span>fondos, textos y bordes</span></figcaption>
+        </figure>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-sem">
+        <table>
+          <caption id="cap-sem">Colores de estado y apoyo: significado claro en cualquier pantalla</caption>
+          <thead><tr><th scope="col">Color</th><th scope="col">Tono principal</th><th scope="col">Fondo suave</th><th scope="col">Cuándo utilizarlo</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-success-solid)"></span>Éxito</th><td class="font-mono">#1A7F4E</td><td class="font-mono">#E9F5EE</td><td>Procesos completados, equipos operativos y confirmaciones</td></tr>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-warning-solid)"></span>Aviso</th><td class="font-mono">#E8A013</td><td class="font-mono">#FDF3DD</td><td>Advertencias preventivas, stock bajo o revisiones pendientes</td></tr>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-error-solid)"></span>Error</th><td class="font-mono">#B3261E</td><td class="font-mono">#FBEAE8</td><td>Paradas de línea, incidencias críticas o acciones de borrado</td></tr>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-info-solid)"></span>Información</th><td class="font-mono">#05677F</td><td class="font-mono">#EEF6F8</td><td>Avisos generales, ayuda contextual y notas operativas</td></tr>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-accent-solid)"></span>Acento</th><td class="font-mono">#22C0B4</td><td class="font-mono">#E6F8F6</td><td>Destacados de innovación, sugerencias de IA y progreso</td></tr>
+            <tr><th scope="row"><span class="dot" style="background:var(--iar-complement-solid)"></span>Complementario</th><td class="font-mono">#D96B27</td><td class="font-mono">#FDF1E8</td><td>Contraste en gráficas comparativas e hitos puntuales</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid-2 scheme-demo">
+        <figure class="plate scheme-light">
+          <div class="plate-stage stage-demo">
+            <div class="alert alert-success"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><b>Orden cerrada</b><p>La intervención OT-2419 ha quedado registrada correctamente.</p></div></div>
+            <button class="btn btn-primary" type="button">Guardar cambios</button>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Modo claro</span><span>entornos de oficina y documentos</span></figcaption>
+        </figure>
+        <figure class="plate scheme-dark">
+          <div class="plate-stage stage-demo">
+            <div class="alert alert-success"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><b>Orden cerrada</b><p>La intervención OT-2419 ha quedado registrada correctamente.</p></div></div>
+            <button class="btn btn-primary" type="button">Guardar cambios</button>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Modo oscuro</span><span>salas de control y turnos en planta</span></figcaption>
+        </figure>
+      </div>
+      <div class="prose">
+        <h3>Recomendaciones prácticas</h3>
+        <ul class="reglas">
+          <li><b>03.1</b><span class="regla-body"><b>Proporción equilibrada:</b> el teal corporativo y los fondos neutros deben dominar la composición; el azul de acento (<span class="font-mono">#22C0B4</span>) y el complementario (<span class="font-mono">#D96B27</span>) se usan en pequeños toques para dirigir la mirada.</span></li>
+          <li><b>03.2</b><span class="regla-body"><b>Nunca solo color:</b> acompaña siempre los estados (éxito, aviso, error) con un icono y una palabra clara para que cualquier persona lo entienda de un vistazo.</span></li>
+          <li><b>03.3</b><span class="regla-body"><b>Fondos suaves para avisos:</b> utiliza los tonos suaves de fondo en cajas de alerta y deja los colores intensos para etiquetas pequeñas, botones o iconos.</span></li>
+        </ul>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 03">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">03 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">—</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-02"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 02 Logotipo</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-04">04 Tipografía <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 04 ============ -->
+    <section class="lamina" id="lamina-04" tabindex="-1" aria-labelledby="t-04">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 04/07</span>
+        <h2 id="t-04">Tipografía</h2>
+        <span class="head-meta font-mono">OFL · REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Utilizamos tres tipografías gratuitas y abiertas (Google Fonts): <b>Sora</b> para titulares y cifras principales, <b>Source Sans 3</b> para todo el texto de lectura y elementos de interfaz, e <b>IBM Plex Mono</b> reservada únicamente a casos muy puntuales como código, pies de lámina o referencias técnicas. Las tres incluyen todos los caracteres para español, inglés y francés.</p>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-specimen">
+          <p class="spec-display" style="font-weight:800">Tecnología clara para la industria.</p>
+          <p class="spec-display spec-600">Titulares expresivos en Sora y lectura cómoda en Source Sans 3.</p>
+          <p class="spec-body">Source Sans 3 es nuestra voz principal en párrafos, informes, botones, menús y tablas. Su dibujo limpio facilita la lectura prolongada tanto en documentos impresos como en pantallas de ordenador o tabletas de planta.</p>
+          <p class="spec-mono font-mono tnum">REF: iAR-MIC-2027 · token: --color-primary · 2026-11-20</p>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 04.1 · Muestra tipográfica</span><span>Sora · Source Sans 3 · IBM Plex Mono (uso puntual)</span></figcaption>
+      </figure>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-scale">
+        <table>
+          <caption id="cap-scale">Tamaños recomendados según la función del texto</caption>
+          <thead><tr><th scope="col">Nivel</th><th scope="col">Tipografía</th><th scope="col">Tamaño aprox.</th><th scope="col">Dónde utilizarlo</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Portada / Cifra</th><td>Sora Bold / ExtraBold</td><td class="tnum">36–60 px</td><td>Portadas de presentación y grandes indicadores (KPI)</td></tr>
+            <tr><th scope="row">Título de sección</th><td>Sora Bold</td><td class="tnum">28–36 px</td><td>Encabezados principales de página o diapositiva</td></tr>
+            <tr><th scope="row">Subtítulo</th><td>Sora SemiBold</td><td class="tnum">20–26 px</td><td>Bloques destacados, títulos de tarjetas y modales</td></tr>
+            <tr><th scope="row">Cuerpo de lectura</th><td>Source Sans 3 Regular</td><td class="tnum">16–17 px</td><td>Párrafos, descripciones y documentación general</td></tr>
+            <tr><th scope="row">Interfaz y tablas</th><td>Source Sans 3 Regular / SemiBold</td><td class="tnum">14–15 px</td><td>Botones, menús, etiquetas de formulario y celdas</td></tr>
+            <tr><th scope="row">Notas y código</th><td>Source Sans 3 / IBM Plex Mono</td><td class="tnum">12–13 px</td><td>Pies de página, códigos de referencia y fragmentos técnicos</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-nums">
+            <div class="nums-col"><span class="nums-label">Cifras desalineadas (evitar en tablas)</span><span class="nums-prop">1.111,11<br>8.888,88<br>1.284,00</span></div>
+            <div class="nums-col"><span class="nums-label">Cifras tabulares (siempre alineadas)</span><span class="nums-tab tnum">1.111,11<br>8.888,88<br>1.284,00</span></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 04.2 · Alineación de números</span><span>lectura rápida en columnas y cuadros de mando</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-code">
+            <span class="copy copy-code"><button class="copy-button" type="button" command="--copy" commandfor="code-tokens" aria-label="Copiar ejemplo de código CSS"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button><span class="tip" role="status"></span></span>
+            <pre tabindex="0"><code id="code-tokens">.kpi-card {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-radius: var(--radius-m);
+}</code></pre>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 04.3 · Uso puntual de IBM Plex Mono</span><span>reservada para código, tokens y pies técnicos</span></figcaption>
+        </figure>
+      </div>
+      <div class="prose">
+        <h3>Criterios tipográficos</h3>
+        <ul class="reglas">
+          <li><b>04.1</b><span class="regla-body"><b>Sora</b> se emplea en titulares, portadas y grandes números; nunca para párrafos largos.</span></li>
+          <li><b>04.2</b><span class="regla-body"><b>Source Sans 3</b> es la fuente por defecto para textos, subtítulos de apoyo, etiquetas de interfaz y cabeceras de tablas.</span></li>
+          <li><b>04.3</b><span class="regla-body"><b>IBM Plex Mono</b> se limita a casos puntuales: bloques de código, valores hexadecimales, cotas de plano, pies de página o referencias de versión.</span></li>
+          <li><b>04.4</b><span class="regla-body">En tablas y listados de precios o métricas, activa siempre los <b>números tabulares</b> para que las unidades y decimales caigan en vertical.</span></li>
+        </ul>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 04">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">04 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">—</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-03"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 03 Color</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-05">05 Componentes <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 05 ============ -->
+    <section class="lamina" id="lamina-05" tabindex="-1" aria-labelledby="t-05">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 05/07</span>
+        <h2 id="t-05">Componentes de interfaz (UI)</h2>
+        <span class="head-meta font-mono">EJEMPLOS INTERACTIVOS · REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Todos los componentes de nuestras aplicaciones y cuadros de mando comparten un mismo estilo limpio, accesible y fácil de usar tanto con ratón como en pantallas táctiles. Los ejemplos de esta lámina son interactivos y utilizan datos simulados a modo de demostración.</p>
+      </div>
+
+      <figure class="plate">
+        <div class="plate-stage stage-comp">
+          <div class="comp-row">
+            <button class="btn btn-primary" type="button">Guardar cambios</button>
+            <button class="btn btn-accent" type="button"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Analizar con IA</button>
+            <button class="btn btn-secondary" type="button">Cancelar</button>
+            <button class="btn btn-ghost" type="button">Ver histórico</button>
+            <button class="btn btn-danger" type="button">Cerrar orden</button>
+          </div>
+          <div class="comp-row">
+            <button class="btn btn-primary btn-s" type="button">Tamaño compacto</button>
+            <button class="btn btn-primary" type="button" disabled>No disponible</button>
+            <button class="btn btn-primary" type="button" aria-busy="true"><svg class="icon spin" aria-hidden="true"><use href="#i-spinner"/></svg>Guardando…</button>
+            <button class="btn btn-secondary" type="button"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>Nueva orden</button>
+          </div>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 05.1 · Botones de acción</span><span>principal, acento IA, secundario, texto y peligro</span></figcaption>
+      </figure>
+
+      <figure class="plate">
+        <div class="plate-stage stage-comp stage-form">
+          <div class="field">
+            <label for="f-ot">Código de orden</label>
+            <input id="f-ot" type="text" value="OT-2418" autocomplete="off">
+            <p class="hint" id="f-ot-hint">Identificador asignado automáticamente por el sistema.</p>
+          </div>
+          <div class="field">
+            <label for="f-linea">Línea de producción</label>
+            <select id="f-linea"><option>Línea 01 · Montaje</option><option selected>Línea 02 · Compresores</option><option>Línea 03 · Paletizado</option><option>Línea 04 · Prensas</option></select>
+          </div>
+          <div class="field field-error">
+            <label for="f-fecha">Fecha de intervención</label>
+            <input id="f-fecha" type="text" value="32/13/2026" aria-invalid="true" aria-describedby="f-fecha-error">
+            <p class="error-msg" id="f-fecha-error"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Fecha no válida. Usa el formato dd/mm/aaaa, p. ej. 20/11/2026.</p>
+          </div>
+          <div class="field">
+            <label for="f-umbral">Umbral de alerta preventiva (<output id="f-umbral-out" class="tnum">75 %</output>)</label>
+            <input id="f-umbral" class="range-input" type="range" min="0" max="100" value="75" oninput="document.getElementById('f-umbral-out').value = this.value + ' %'">
+            <p class="hint">Aviso automático al superar el nivel configurado.</p>
+          </div>
+          <div class="field-checks">
+            <label class="check"><input type="checkbox" checked> Notificar al responsable</label>
+            <label class="check"><input type="radio" name="prio" checked> Prioridad normal</label>
+            <label class="check"><input type="radio" name="prio"> Prioridad urgente</label>
+            <label class="check check-switch"><input type="checkbox" role="switch" id="f-kiosco" checked> Modo pantalla táctil en planta</label>
+          </div>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 05.2 · Formularios y controles</span><span>campos de texto, selector, control deslizante e interruptores</span></figcaption>
+      </figure>
+
+      <figure class="plate">
+        <div class="plate-stage stage-comp">
+          <div class="filters">
+            <span class="search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="ot-search" placeholder="Buscar orden o equipo…" aria-label="Buscar orden o equipo"></span>
+            <span class="chips" role="group" aria-label="Filtrar por estado">
+              <button class="chip-btn is-on" type="button" aria-pressed="true" data-filter="all">Todas</button>
+              <button class="chip-btn" type="button" aria-pressed="false" data-filter="abierta">Abierta</button>
+              <button class="chip-btn" type="button" aria-pressed="false" data-filter="curso">En curso</button>
+              <button class="chip-btn" type="button" aria-pressed="false" data-filter="cerrada">Cerrada</button>
+            </span>
+          </div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-ot">
+            <table id="ot-table">
+              <caption id="cap-ot">Órdenes de mantenimiento · datos de demostración</caption>
+              <thead><tr><th scope="col">Orden</th><th scope="col">Equipo</th><th scope="col">Línea</th><th scope="col">Tipo</th><th scope="col">Estado</th></tr></thead>
+              <tbody>
+                <tr data-estado="curso"><th scope="row" class="font-mono">OT-2417</th><td>Prensa B</td><td class="tnum">04</td><td>Preventiva</td><td><span class="badge badge-info"><svg class="icon" aria-hidden="true"><use href="#i-spinner"/></svg>En curso</span></td></tr>
+                <tr data-estado="abierta"><th scope="row" class="font-mono">OT-2418</th><td>Compresor A</td><td class="tnum">02</td><td>Correctiva</td><td><span class="badge badge-warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Abierta</span></td></tr>
+                <tr data-estado="cerrada"><th scope="row" class="font-mono">OT-2419</th><td>Cinta 3</td><td class="tnum">01</td><td>Preventiva</td><td><span class="badge badge-success"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Cerrada</span></td></tr>
+                <tr data-estado="curso"><th scope="row" class="font-mono">OT-2420</th><td>Horno 2</td><td class="tnum">04</td><td>Predictiva</td><td><span class="badge badge-info"><svg class="icon" aria-hidden="true"><use href="#i-spinner"/></svg>En curso</span></td></tr>
+                <tr data-estado="abierta"><th scope="row" class="font-mono">OT-2421</th><td>Robot paletizado</td><td class="tnum">03</td><td>Correctiva</td><td><span class="badge badge-warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Abierta</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-empty" id="ot-empty" hidden><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Sin resultados para este filtro. <button class="btn btn-ghost btn-s" type="button" id="ot-clear">Limpiar filtros</button></p>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 05.3 · Tabla con búsqueda y filtros en vivo</span><span>adaptable a pantallas pequeñas</span></figcaption>
+      </figure>
+
+      <div class="grid-3">
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <div class="kpi">
+              <span class="kpi-label">Eficiencia OEE · Línea 04</span>
+              <span class="kpi-value tnum">87,2<span class="kpi-unit">%</span></span>
+              <div class="kpi-bar" aria-hidden="true"><span style="width:87.2%;background:var(--iar-accent-solid)"></span></div>
+              <span class="kpi-delta up"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>+2,4 pp respecto al mes anterior</span>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>05.4 · Tarjeta KPI con barra</span><span>azul de acento en progreso</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <div class="kpi">
+              <span class="kpi-label">Incidencias abiertas</span>
+              <span class="kpi-value tnum">03</span>
+              <div class="kpi-bar" aria-hidden="true"><span style="width:24%;background:var(--iar-complement-solid)"></span></div>
+              <span class="kpi-delta down"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>−2 respecto al mes anterior</span>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>05.5 · Tarjeta KPI comparativa</span><span>uso del complementario cálido</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <div class="kpi">
+              <span class="kpi-label">Inspecciones asistidas</span>
+              <span class="kpi-value tnum">1.284</span>
+              <div class="kpi-bar" aria-hidden="true"><span style="width:92%;background:var(--color-primary)"></span></div>
+              <span class="kpi-delta up"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>+18 % en el turno actual</span>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>05.6 · Tarjeta KPI de actividad</span><span>iAR · datos simulados</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-comp stage-alerts">
+            <div class="alert alert-success"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><b>Orden cerrada</b><p>La OT-2419 quedó registrada en el histórico.</p></div></div>
+            <div class="alert alert-warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><b>Stock bajo</b><p>Quedan 2 unidades del repuesto R-118 en almacén.</p></div></div>
+            <div class="alert alert-error"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg><div><b>Parada de línea</b><p>El compresor A superó el umbral de vibración.</p></div></div>
+            <div class="alert alert-info"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><div><b>Recomendación predictiva</b><p>El análisis sugiere revisar el horno 2 en los próximos 14 días.</p></div></div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 05.7 · Avisos y alertas</span><span>icono + título + explicación clara</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <div class="appbar">
+              <svg class="appbar-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+              <span class="appbar-title">iAR</span>
+              <nav class="tabs" role="tablist" aria-label="Secciones de la aplicación">
+                <button role="tab" id="tab-panel" aria-selected="true" aria-controls="panel-panel" type="button">Resumen</button>
+                <button role="tab" id="tab-lineas" aria-selected="false" aria-controls="panel-lineas" tabindex="-1" type="button">Líneas</button>
+                <button role="tab" id="tab-alertas" aria-selected="false" aria-controls="panel-alertas" tabindex="-1" type="button">Avisos</button>
+              </nav>
+              <button class="btn btn-primary btn-s appbar-cta" type="button">Nueva orden</button>
+            </div>
+            <div class="tabpanels">
+              <div role="tabpanel" id="panel-panel" aria-labelledby="tab-panel"><p class="tnum"><b>Resumen de planta:</b> Eficiencia media 87,2 % · 3 incidencias abiertas · 4 órdenes en curso</p></div>
+              <div role="tabpanel" id="panel-lineas" aria-labelledby="tab-lineas" hidden><p class="tnum"><b>Estado por línea:</b> Línea 01 (92,1 %) · Línea 02 (78,4 %) · Línea 03 (88,0 %) · Línea 04 (87,2 %)</p></div>
+              <div role="tabpanel" id="panel-alertas" aria-labelledby="tab-alertas" hidden><p class="tnum"><b>Avisos activos:</b> 2 preventivos · 1 parada crítica · 0 pendientes de cierre</p></div>
+            </div>
+            <div class="modal-demo">
+              <button class="btn btn-danger" type="button" command="show-modal" commandfor="demo-modal">Cerrar orden OT-2418…</button>
+              <span class="tip modal-status" role="status" id="modal-status"></span>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 05.8 · Cabecera de aplicación y ventana modal</span><span>isotipo + pestañas + diálogo de confirmación</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="grid-2">
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <nav class="breadcrumbs" aria-label="Ruta de navegación">
+              <ol>
+                <li><a href="#lamina-05">iAR Planta</a></li>
+                <li><a href="#lamina-05">Línea 02 · Compresores</a></li>
+                <li aria-current="page">Inspección de calidad</li>
+              </ol>
+            </nav>
+            <ol class="stepper" aria-label="Progreso de inspección">
+              <li class="step is-done">
+                <span class="step-dot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+                <div class="step-body"><b>1. Preparación</b><span>Equipo identificado</span></div>
+              </li>
+              <li class="step is-current" aria-current="step">
+                <span class="step-dot tnum">2</span>
+                <div class="step-body"><b>2. Captura visual</b><span>Verificación guiada en curso</span></div>
+              </li>
+              <li class="step">
+                <span class="step-dot tnum">3</span>
+                <div class="step-body"><b>3. Cierre y firma</b><span>Registro en histórico</span></div>
+              </li>
+            </ol>
+            <div class="progress-block">
+              <div class="progress-head">
+                <span>Avance del lote de control</span>
+                <strong class="tnum">68 % completado</strong>
+              </div>
+              <div class="progress-track" role="progressbar" aria-label="Avance del lote de control" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-fill" style="width:68%"></span>
+              </div>
+            </div>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 05.9 · Migas de pan, pasos y barra de progreso</span><span>guía visual para procesos paso a paso</span></figcaption>
+        </figure>
+
+        <figure class="plate">
+          <div class="plate-stage stage-comp">
+            <div class="segmented-bar">
+              <span class="seg-label">Turno visualizado:</span>
+              <div class="segmented" role="group" aria-label="Seleccionar turno">
+                <button type="button" class="seg-btn is-active" aria-pressed="true">Mañana</button>
+                <button type="button" class="seg-btn" aria-pressed="false">Tarde</button>
+                <button type="button" class="seg-btn" aria-pressed="false">Noche</button>
+              </div>
+            </div>
+            <ul class="timeline" aria-label="Registro de actividad reciente">
+              <li class="tl-item">
+                <span class="tl-dot tl-accent"></span>
+                <div class="tl-content">
+                  <div class="tl-head"><b>Sugerencia de IA aplicada</b><time class="tnum">09:42</time></div>
+                  <p>Ajuste preventivo de presión validado en Línea 02.</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <span class="tl-dot tl-success"></span>
+                <div class="tl-content">
+                  <div class="tl-head"><b>Inspección completada sin incidencias</b><time class="tnum">08:15</time></div>
+                  <p>Lote #408 verificado por operario con asistencia visual.</p>
+                </div>
+              </li>
+              <li class="tl-item">
+                <span class="tl-dot tl-comp"></span>
+                <div class="tl-content">
+                  <div class="tl-head"><b>Hito de mantenimiento programado</b><time class="tnum">07:00</time></div>
+                  <p>Inicio de ventana de calibración en Prensa B.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="plate-cap font-mono"><span>Pieza 05.10 · Selector de segmento y actividad reciente</span><span>seguimiento claro de eventos en tiempo real</span></figcaption>
+        </figure>
+      </div>
+
+      <figure class="plate">
+        <div class="plate-stage stage-comp stage-badges">
+          <span class="badge badge-success"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Operativo</span>
+          <span class="badge badge-warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Revisión pendiente</span>
+          <span class="badge badge-info"><svg class="icon" aria-hidden="true"><use href="#i-spinner"/></svg>En proceso</span>
+          <span class="badge badge-error"><svg class="icon" aria-hidden="true"><use href="#i-error"/></svg>Parada crítica</span>
+          <span class="badge badge-accent"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Asistido por IA</span>
+          <span class="badge badge-complement"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Hito clave</span>
+          <span class="badge badge-product">iAR · Planta</span>
+          <span class="badge badge-product">iAR · Calidad</span>
+          <span class="badge badge-product">iAR · Cloud</span>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 05.11 · Etiquetas y estados (Badges)</span><span>estados operativos, acento IA, complementario y áreas iAR</span></figcaption>
+      </figure>
+
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 05">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">05 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">—</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-04"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 04 Tipografía</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-06">06 Presentaciones <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 06 ============ -->
+    <section class="lamina" id="lamina-06" tabindex="-1" aria-labelledby="t-06">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 06/07</span>
+        <h2 id="t-06">Presentaciones</h2>
+        <span class="head-meta font-mono">16:9 · REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Siete diapositivas de referencia listas para inspirar propuestas comerciales y técnicas en PowerPoint, Keynote o Google Slides. Combinan el teal corporativo con toques del azul de acento (<span class="font-mono">#22C0B4</span>) y el complementario cálido (<span class="font-mono">#D96B27</span>) para lograr presentaciones dinámicas, visuales y fáciles de seguir.</p>
+      </div>
+      <div class="slides-shell">
+        <div class="slides-controls">
+          <button class="icon-btn" type="button" id="slide-prev" aria-label="Diapositiva anterior"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+          <output class="font-mono tnum" id="slide-count" aria-live="polite">1 / 7</output>
+          <button class="icon-btn" type="button" id="slide-next" aria-label="Diapositiva siguiente"><svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+          <div class="slide-dots" id="slide-dots" role="group" aria-label="Ir a diapositiva">
+            <button type="button" class="slide-dot is-on" data-slide="0" aria-label="Diapositiva 1: Portada"></button>
+            <button type="button" class="slide-dot" data-slide="1" aria-label="Diapositiva 2: Agenda"></button>
+            <button type="button" class="slide-dot" data-slide="2" aria-label="Diapositiva 3: Comparativa"></button>
+            <button type="button" class="slide-dot" data-slide="3" aria-label="Diapositiva 4: Arquitectura"></button>
+            <button type="button" class="slide-dot" data-slide="4" aria-label="Diapositiva 5: Retorno"></button>
+            <button type="button" class="slide-dot" data-slide="5" aria-label="Diapositiva 6: Caso de uso"></button>
+            <button type="button" class="slide-dot" data-slide="6" aria-label="Diapositiva 7: Cierre"></button>
+          </div>
+        </div>
+        <div class="slides" id="slides" tabindex="0" role="region" aria-label="Diapositivas de referencia, desplazamiento horizontal">
+          <article class="slide slide-cover">
+            <div class="slide-cover-grid">
+              <div class="slide-cover-main">
+                <div class="slide-cover-top">
+                  <svg class="slide-logo" aria-hidden="true"><use href="#logo-full"/></svg>
+                  <span class="slide-pill">Propuesta técnico-comercial · 2027</span>
+                </div>
+                <h3>Transformación digital e IA aplicada en Planta Norte</h3>
+                <p class="slide-sub">Automatización inteligente, control de calidad en tiempo real y operación sin papel.</p>
+              </div>
+              <svg class="slide-cover-art" viewBox="0 0 180 180" aria-hidden="true">
+                <circle cx="90" cy="90" r="72" fill="none" stroke="#22c0b4" stroke-width="2" opacity=".35"/>
+                <circle cx="90" cy="90" r="48" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6 6" opacity=".4"/>
+                <path d="M90 38v104M38 90h104" stroke="#22c0b4" stroke-width="2" opacity=".55"/>
+                <circle cx="90" cy="90" r="16" fill="#22c0b4" opacity=".25"/>
+              </svg>
+            </div>
+            <p class="slide-foot font-mono"><span>iAR · Applied AI and digital solutions for business and industry</span><span class="tnum">01 / 07</span></p>
+          </article>
+
+          <article class="slide slide-agenda">
+            <div class="slide-top-bar">
+              <h3> Estructura de la sesión</h3>
+              <svg class="slide-mini-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+            </div>
+            <ol class="agenda-grid">
+              <li class="agenda-card">
+                <span class="agenda-num font-mono tnum">01</span>
+                <div><b>Contexto y objetivos</b><span>Diagnóstico de planta y retos operativos</span></div>
+              </li>
+              <li class="agenda-card">
+                <span class="agenda-num font-mono tnum">02</span>
+                <div><b>Arquitectura iAR</b><span>Integración de sensores, IA y cuadros de mando</span></div>
+              </li>
+              <li class="agenda-card">
+                <span class="agenda-num font-mono tnum">03</span>
+                <div><b>Impacto y retorno</b><span>Indicadores de eficiencia y reducción de paradas</span></div>
+              </li>
+              <li class="agenda-card">
+                <span class="agenda-num font-mono tnum">04</span>
+                <div><b>Plan de despliegue</b><span>Fases, acompañamiento y formación en planta</span></div>
+              </li>
+            </ol>
+            <p class="slide-foot font-mono"><span>iAR · Propuesta Planta Norte</span><span class="tnum">02 / 07</span></p>
+          </article>
+
+          <article class="slide slide-compare">
+            <div class="slide-top-bar">
+              <h3>Dos entornos, una misma experiencia iAR</h3>
+              <svg class="slide-mini-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+            </div>
+            <div class="compare">
+              <div class="compare-card compare-plant">
+                <span class="compare-tag">Operación en planta</span>
+                <h4>Fiabilidad a pie de línea</h4>
+                <ul>
+                  <li>Pantallas claras pensadas para guantes y distancia</li>
+                  <li>Avisos visuales inmediatos con icono y acción</li>
+                  <li>Trazabilidad directa de cada lote y equipo</li>
+                </ul>
+              </div>
+              <div class="compare-card compare-ai">
+                <span class="compare-tag compare-tag-accent">Gestión e Inteligencia Artificial</span>
+                <h4>Decisiones basadas en datos</h4>
+                <ul>
+                  <li>Cuadros de mando unificados en tiempo real</li>
+                  <li>Modelos predictivos y asistentes inteligentes</li>
+                  <li>Modo claro y oscuro adaptado a cada puesto</li>
+                </ul>
+              </div>
+            </div>
+            <p class="slide-foot font-mono"><span>iAR · Propuesta Planta Norte</span><span class="tnum">03 / 07</span></p>
+          </article>
+
+          <article class="slide slide-arch">
+            <div class="slide-top-bar">
+              <h3>Arquitectura conectada de extremo a extremo</h3>
+              <svg class="slide-mini-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+            </div>
+            <div class="arch">
+              <div class="arch-node"><span class="arch-k">Captura en línea</span><b>Dispositivos y AR/VR</b></div>
+              <div class="arch-node"><span class="arch-k">Atención y voz</span><b>Automatización inteligente</b></div>
+              <div class="arch-node"><span class="arch-k">Operaciones</span><b>Control de calidad y OEE</b></div>
+              <div class="arch-hub">
+                <svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>
+                <span>Núcleo iAR · Inteligencia Artificial aplicada, visión y agentes</span>
+              </div>
+              <div class="arch-node"><span class="arch-k">Mantenimiento</span><b>GMAO y trazabilidad</b></div>
+              <div class="arch-node"><span class="arch-k">Infraestructura</span><b>Cloud Azure / AWS</b></div>
+              <div class="arch-node"><span class="arch-k">Dirección</span><b>Cuadros de mando BI</b></div>
+            </div>
+            <p class="slide-foot font-mono"><span>iAR · Propuesta Planta Norte</span><span class="tnum">04 / 07</span></p>
+          </article>
+
+          <article class="slide slide-kpi">
+            <div class="slide-top-bar">
+              <h3>Impacto operativo estimado</h3>
+              <svg class="slide-mini-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+            </div>
+            <div class="slide-kpis">
+              <div class="slide-kpi-card">
+                <span class="kpi-value tnum">−32<span class="kpi-unit">%</span></span>
+                <span class="kpi-label">Tiempo de parada no planificada</span>
+                <div class="slide-bar"><span style="width:68%;background:var(--iar-accent-solid)"></span></div>
+              </div>
+              <div class="slide-kpi-card">
+                <span class="kpi-value tnum">+18<span class="kpi-unit">%</span></span>
+                <span class="kpi-label">Mejora en eficiencia OEE</span>
+                <div class="slide-bar"><span style="width:82%;background:var(--color-primary)"></span></div>
+              </div>
+              <div class="slide-kpi-card">
+                <span class="kpi-value tnum">100<span class="kpi-unit">%</span></span>
+                <span class="kpi-label">Registros digitales sin papel</span>
+                <div class="slide-bar"><span style="width:100%;background:var(--iar-complement-solid)"></span></div>
+              </div>
+            </div>
+            <p class="slide-note">Cifras de demostración (simuladas) para ilustrar el diseño de indicadores.</p>
+            <p class="slide-foot font-mono"><span>iAR · Propuesta Planta Norte</span><span class="tnum">05 / 07</span></p>
+          </article>
+
+          <article class="slide slide-case">
+            <div class="slide-top-bar">
+              <h3>Caso práctico · Inspección visual asistida</h3>
+              <svg class="slide-mini-iso" aria-hidden="true"><use href="#logo-iso"/></svg>
+            </div>
+            <div class="case-layout">
+              <div class="case-main">
+                <p class="slide-body">Con la plataforma de <b>iAR</b>, el operario recibe sobre la pieza la secuencia de verificación guiada por visión artificial: cada control queda registrado al instante, las incidencias abren aviso de mantenimiento y el cuadro de mando actualiza el turno sin usar papel.</p>
+                <p class="slide-note">Escenario ilustrativo construido para esta propuesta.</p>
+              </div>
+              <ol class="case-steps">
+                <li><span>1</span><b>Guiado AR</b> sobre el punto crítico</li>
+                <li><span>2</span><b>Validación IA</b> de la pieza en segundos</li>
+                <li><span>3</span><b>Informe BI</b> consolidado al cierre</li>
+              </ol>
+            </div>
+            <p class="slide-foot font-mono"><span>iAR · Propuesta Planta Norte</span><span class="tnum">06 / 07</span></p>
+          </article>
+
+          <article class="slide slide-close">
+            <div class="slide-cover-grid">
+              <div class="slide-cover-main">
+                <svg class="slide-logo" aria-hidden="true"><use href="#logo-full"/></svg>
+                <h3>Hablemos de su próximo proyecto.</h3>
+                <p class="slide-sub">Pamplona (España) · Castres (Francia) · Atención en ES / EN / FR</p>
+                <div class="slide-close-badges">
+                  <span class="slide-pill">Pyme Innovadora</span>
+                  <span class="slide-pill">Microsoft Partner</span>
+                </div>
+              </div>
+              <svg class="slide-cover-art" viewBox="0 0 180 180" aria-hidden="true">
+                <circle cx="90" cy="90" r="68" fill="none" stroke="#22c0b4" stroke-width="2" opacity=".4"/>
+                <path d="M90 50v80M50 90h80" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity=".25"/>
+              </svg>
+            </div>
+            <p class="slide-foot font-mono"><span>iAR · Applied AI and digital solutions for business and industry</span><span class="tnum">07 / 07</span></p>
+          </article>
+        </div>
+      </div>
+      <div class="prose">
+        <h3>Claves para presentaciones atractivas</h3>
+        <ul class="reglas">
+          <li><b>06.1</b><span class="regla-body"><b>Portada y cierre con impacto:</b> fondo en teal corporativo con el logotipo en blanco y detalles geométricos sutiles en azul de acento (<span class="font-mono">#22C0B4</span>).</span></li>
+          <li><b>06.2</b><span class="regla-body"><b>Diapositivas interiores limpias:</b> fondo claro, banda superior corporativa, isotipo discreto en la esquina superior derecha y bloques bien diferenciados.</span></li>
+          <li><b>06.3</b><span class="regla-body"><b>Una idea por diapositiva:</b> prioriza tarjetas visuales, comparativas a dos columnas y grandes cifras acompañadas de barras de progreso en lugar de bloques largos de texto.</span></li>
+          <li><b>06.4</b><span class="regla-body"><b>Transparencia en los datos:</b> cuando utilices cifras simuladas en una demostración, indícalo con una nota breve a pie de diapositiva.</span></li>
+        </ul>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 06">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">06 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">16:9</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-05"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 05 Componentes</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-07">07 Voz y descargas <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ============ LÁMINA 07 ============ -->
+    <section class="lamina" id="lamina-07" tabindex="-1" aria-labelledby="t-07">
+      <header class="lamina-head">
+        <span class="hoja-id font-mono">LÁMINA 07/07</span>
+        <h2 id="t-07">Tono de voz, idiomas y descargas</h2>
+        <span class="head-meta font-mono">ES · EN · FR · REV 1.0</span>
+      </header>
+      <div class="prose">
+        <p>Nuestra forma de comunicar es clara, cercana y orientada a soluciones: explicamos qué hace el sistema sin tecnicismos innecesarios, acompañamos las cifras de su contexto y redactamos mensajes de aviso que ayudan a resolver la situación. Mantenemos el mismo cuidado en español, inglés y francés.</p>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-voz">
+        <table>
+          <caption id="cap-voz">Ejemplos de tono de voz: claro y útil frente a ambiguo</caption>
+          <thead><tr><th scope="col">Recomendado</th><th scope="col">Evitar</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">«Guardar cambios» · «Cerrar orden»</th><td>«OK» · «Aceptar» sin indicar la acción</td></tr>
+            <tr><th scope="row">«Fecha no válida. Usa el formato dd/mm/aaaa.»</th><td>«Error 422» · «Campo inválido»</td></tr>
+            <tr><th scope="row">«Eficiencia OEE 87,2 % (+2,4 pp respecto al mes anterior)»</th><td>«¡Resultados increíbles!» sin datos concretos</td></tr>
+            <tr><th scope="row">«El análisis sugiere revisar el horno 2 en 14 días.»</th><td>«La IA ha decidido que…»</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-i18n">
+        <table>
+          <caption id="cap-i18n">Diseño multilingüe: los botones y textos se adaptan a cada idioma</caption>
+          <thead><tr><th scope="col">Español (ES)</th><th scope="col">Inglés (EN)</th><th scope="col">Francés (FR)</th><th scope="col">Criterio práctico</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Guardar cambios</th><td>Save changes</td><td>Enregistrer les modifications</td><td>El botón crece según el texto; no fijar anchos rígidos</td></tr>
+            <tr><th scope="row">Nueva orden</th><td>New order</td><td>Nouvel ordre de travail</td><td>El texto en francés suele ser más largo: dejar espacio holgado</td></tr>
+            <tr><th scope="row">Modo pantalla en planta</th><td>Plant screen mode</td><td>Mode écran d’atelier</td><td>Permitir que las etiquetas pasen a dos líneas sin cortarse</td></tr>
+            <tr><th scope="row">œ · ç · à · é · ñ</th><td>—</td><td>« Cœur d’atelier »</td><td>Nuestras tipografías incluyen todos los acentos y caracteres</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="plate">
+        <div class="plate-stage stage-downloads">
+          <a class="dl" href="tokens/tokens.css" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span><b>tokens.css</b><span>Variables de color, tipografía y espaciado para web</span></span></a>
+          <a class="dl" href="tokens/design-tokens.json" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span><b>design-tokens.json</b><span>Archivo base de tokens del sistema de diseño</span></span></a>
+          <a class="dl" href="assets/logo/iar-logo.svg" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span><b>Logotipos oficiales iAR (SVG)</b><span>Versiones principal, tinta, negativo e isotipo</span></span></a>
+          <a class="dl" href="brand-brief.md" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span><b>brand-brief.md</b><span>Resumen de posicionamiento y objetivos de marca</span></span></a>
+        </div>
+        <figcaption class="plate-cap font-mono"><span>Pieza 07.1 · Recursos descargables</span><span>archivos listos para diseño y desarrollo</span></figcaption>
+      </figure>
+      <div class="prose">
+        <h3>Sobre este manual</h3>
+        <p>Este documento interactivo recoge la identidad visual de <b>iAR</b> para 2027. Todas las combinaciones de color han sido verificadas para ofrecer una lectura cómoda y accesible tanto en modo claro como en modo oscuro. Los ejemplos de interfaz y diapositivas utilizan datos simulados con fines demostrativos.</p>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cap-rev">
+        <table>
+          <caption id="cap-rev">Historial de versiones</caption>
+          <thead><tr><th scope="col">Versión</th><th scope="col">Fecha</th><th scope="col">Resumen</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" class="font-mono tnum">1.0</th><td class="font-mono tnum">2026-11</td><td>Manual de identidad unificado bajo iAR, con colores de acento y complementario, nuevos componentes UI y presentaciones renovadas</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="lamina-foot">
+        <div class="cajetin" role="table" aria-label="Cajetín de la lámina 07">
+          <div class="cj wide"><span class="k font-mono">Proyecto</span><span class="v">Manual de Identidad Corporativa 2027</span></div>
+          <div class="cj wide"><span class="k font-mono">Empresa</span><span class="v">Industrial Augmented Reality S.L.</span></div>
+          <div class="cj"><span class="k font-mono">Hoja</span><span class="v tnum">07 de 07</span></div>
+          <div class="cj"><span class="k font-mono">Escala</span><span class="v">—</span></div>
+          <div class="cj"><span class="k font-mono">Rev</span><span class="v tnum">1.0</span></div>
+          <div class="cj"><span class="k font-mono">Fecha</span><span class="v tnum">2026-11</span></div>
+        </div>
+        <nav class="hoja-nav" aria-label="Navegación de láminas">
+          <a class="btn btn-secondary btn-s" href="#lamina-06"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg> 06 Presentaciones</a>
+          <a class="btn btn-secondary btn-s" href="#lamina-00">Volver a portada <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </nav>
+      </footer>
+    </section>
+
+    <footer class="colophon font-mono">
+      <span>© 2026 Industrial Augmented Reality S.L. · Pamplona — Castres</span>
+      <span>iAR-MIC-2027 · rev 1.0 · propuesta</span>
+    </footer>
+  </main>
+</div>
+
+<dialog id="demo-modal" aria-labelledby="demo-modal-title" closedby="any">
+  <h3 id="demo-modal-title">¿Cerrar la orden OT-2418?</h3>
+  <p>La orden pasará al histórico y se notificará al responsable de la Línea 02. Esta acción queda trazada en el GMAO.</p>
+  <form method="dialog">
+    <button class="btn btn-secondary" value="cancel" autofocus>Cancelar</button>
+    <button class="btn btn-danger" value="close">Cerrar orden</button>
+  </form>
+</dialog>
+
+<script type="module" src="js/manual.js"></script>
+</body>
+</html>

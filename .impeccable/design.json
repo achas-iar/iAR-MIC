@@ -1,0 +1,1386 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T10:11:36+00:00",
+  "title": "Design System: iAR · Manual de Identidad Corporativa 2027",
+  "seededFrom": {
+    "seed": "eaf8421e5f7ea8e3",
+    "form": "lámina acotada (position 5)",
+    "source": ".impeccable/surfaces/index-html.md"
+  },
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Corporate Teal 600",
+        "canonical": "#05677f",
+        "tonalRamp": [
+          "#eef6f8",
+          "#d9ecf1",
+          "#b3d9e2",
+          "#82bfd0",
+          "#4a9fb5",
+          "#1b839e",
+          "#05677f",
+          "#04566b",
+          "#044556",
+          "#033340",
+          "#02222b"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Teal Hover (light)",
+        "canonical": "#04566b",
+        "tonalRamp": [
+          "oklch(15.0% 0.0409 222.1)",
+          "oklch(26.4% 0.0721 222.1)",
+          "oklch(37.9% 0.0764 222.1)",
+          "oklch(49.3% 0.0764 222.1)",
+          "oklch(60.7% 0.0764 222.1)",
+          "oklch(72.1% 0.0760 222.1)",
+          "oklch(83.6% 0.0448 222.1)",
+          "oklch(95.0% 0.0136 222.1)"
+        ]
+      },
+      "on-primary": {
+        "role": "primary",
+        "displayName": "On-Primary (light)",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Register Teal 300 (dark)",
+        "canonical": "#4cc3dd",
+        "tonalRamp": [
+          "oklch(15.0% 0.0593 214.9)",
+          "oklch(26.4% 0.1044 214.9)",
+          "oklch(37.9% 0.1107 214.9)",
+          "oklch(49.3% 0.1107 214.9)",
+          "oklch(60.7% 0.1107 214.9)",
+          "oklch(72.1% 0.1101 214.9)",
+          "oklch(83.6% 0.0649 214.9)",
+          "oklch(95.0% 0.0198 214.9)"
+        ]
+      },
+      "primary-hover-dark": {
+        "role": "primary",
+        "displayName": "Teal Hover (dark)",
+        "canonical": "#6fd0e4",
+        "tonalRamp": [
+          "oklch(15.0% 0.0512 212.7)",
+          "oklch(26.4% 0.0902 212.7)",
+          "oklch(37.9% 0.0955 212.7)",
+          "oklch(49.3% 0.0955 212.7)",
+          "oklch(60.7% 0.0955 212.7)",
+          "oklch(72.1% 0.0950 212.7)",
+          "oklch(83.6% 0.0560 212.7)",
+          "oklch(95.0% 0.0171 212.7)"
+        ]
+      },
+      "on-primary-dark": {
+        "role": "primary",
+        "displayName": "On-Primary (dark)",
+        "canonical": "#06222c",
+        "tonalRamp": [
+          "oklch(15.0% 0.0204 225.4)",
+          "oklch(26.4% 0.0360 225.4)",
+          "oklch(37.9% 0.0382 225.4)",
+          "oklch(49.3% 0.0382 225.4)",
+          "oklch(60.7% 0.0382 225.4)",
+          "oklch(72.1% 0.0380 225.4)",
+          "oklch(83.6% 0.0224 225.4)",
+          "oklch(95.0% 0.0068 225.4)"
+        ]
+      },
+      "primary-tint": {
+        "role": "primary",
+        "displayName": "Teal Tint (light)",
+        "canonical": "#eef6f8",
+        "tonalRamp": [
+          "oklch(15.0% 0.0048 214.3)",
+          "oklch(26.4% 0.0084 214.3)",
+          "oklch(37.9% 0.0089 214.3)",
+          "oklch(49.3% 0.0089 214.3)",
+          "oklch(60.7% 0.0089 214.3)",
+          "oklch(72.1% 0.0089 214.3)",
+          "oklch(83.6% 0.0052 214.3)",
+          "oklch(95.0% 0.0016 214.3)"
+        ]
+      },
+      "on-primary-tint": {
+        "role": "primary",
+        "displayName": "On Teal Tint (light)",
+        "canonical": "#04566b",
+        "tonalRamp": [
+          "oklch(15.0% 0.0409 222.1)",
+          "oklch(26.4% 0.0721 222.1)",
+          "oklch(37.9% 0.0764 222.1)",
+          "oklch(49.3% 0.0764 222.1)",
+          "oklch(60.7% 0.0764 222.1)",
+          "oklch(72.1% 0.0760 222.1)",
+          "oklch(83.6% 0.0448 222.1)",
+          "oklch(95.0% 0.0136 222.1)"
+        ]
+      },
+      "primary-tint-dark": {
+        "role": "primary",
+        "displayName": "Teal Tint (dark)",
+        "canonical": "#10303c",
+        "tonalRamp": [
+          "oklch(15.0% 0.0230 225.9)",
+          "oklch(26.4% 0.0406 225.9)",
+          "oklch(37.9% 0.0430 225.9)",
+          "oklch(49.3% 0.0430 225.9)",
+          "oklch(60.7% 0.0430 225.9)",
+          "oklch(72.1% 0.0428 225.9)",
+          "oklch(83.6% 0.0252 225.9)",
+          "oklch(95.0% 0.0077 225.9)"
+        ]
+      },
+      "on-primary-tint-dark": {
+        "role": "primary",
+        "displayName": "On Teal Tint (dark)",
+        "canonical": "#b3d9e2",
+        "tonalRamp": [
+          "oklch(15.0% 0.0224 213.7)",
+          "oklch(26.4% 0.0395 213.7)",
+          "oklch(37.9% 0.0418 213.7)",
+          "oklch(49.3% 0.0418 213.7)",
+          "oklch(60.7% 0.0418 213.7)",
+          "oklch(72.1% 0.0416 213.7)",
+          "oklch(83.6% 0.0245 213.7)",
+          "oklch(95.0% 0.0075 213.7)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Technical Paper (ink-50)",
+        "canonical": "#f6f7f7",
+        "tonalRamp": [
+          "oklch(15.0% 0.0006 197.1)",
+          "oklch(26.4% 0.0010 197.1)",
+          "oklch(37.9% 0.0011 197.1)",
+          "oklch(49.3% 0.0011 197.1)",
+          "oklch(60.7% 0.0011 197.1)",
+          "oklch(72.1% 0.0011 197.1)",
+          "oklch(83.6% 0.0006 197.1)",
+          "oklch(95.0% 0.0002 197.1)"
+        ]
+      },
+      "bg-dark": {
+        "role": "neutral",
+        "displayName": "Negative Paper (ink-950)",
+        "canonical": "#0c1a20",
+        "tonalRamp": [
+          "oklch(15.0% 0.0122 227.2)",
+          "oklch(26.4% 0.0215 227.2)",
+          "oklch(37.9% 0.0228 227.2)",
+          "oklch(49.3% 0.0228 227.2)",
+          "oklch(60.7% 0.0228 227.2)",
+          "oklch(72.1% 0.0227 227.2)",
+          "oklch(83.6% 0.0134 227.2)",
+          "oklch(95.0% 0.0041 227.2)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Plate Surface (light)",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Plate Surface (dark)",
+        "canonical": "#10242d",
+        "tonalRamp": [
+          "oklch(15.0% 0.0166 229.0)",
+          "oklch(26.4% 0.0293 229.0)",
+          "oklch(37.9% 0.0310 229.0)",
+          "oklch(49.3% 0.0310 229.0)",
+          "oklch(60.7% 0.0310 229.0)",
+          "oklch(72.1% 0.0309 229.0)",
+          "oklch(83.6% 0.0182 229.0)",
+          "oklch(95.0% 0.0055 229.0)"
+        ]
+      },
+      "sunken": {
+        "role": "neutral",
+        "displayName": "Retícula Ground (light)",
+        "canonical": "#eef2f3",
+        "tonalRamp": [
+          "oklch(15.0% 0.0024 214.3)",
+          "oklch(26.4% 0.0042 214.3)",
+          "oklch(37.9% 0.0045 214.3)",
+          "oklch(49.3% 0.0045 214.3)",
+          "oklch(60.7% 0.0045 214.3)",
+          "oklch(72.1% 0.0045 214.3)",
+          "oklch(83.6% 0.0026 214.3)",
+          "oklch(95.0% 0.0008 214.3)"
+        ]
+      },
+      "sunken-dark": {
+        "role": "neutral",
+        "displayName": "Retícula Ground (dark)",
+        "canonical": "#0a161c",
+        "tonalRamp": [
+          "oklch(15.0% 0.0113 231.0)",
+          "oklch(26.4% 0.0199 231.0)",
+          "oklch(37.9% 0.0210 231.0)",
+          "oklch(49.3% 0.0210 231.0)",
+          "oklch(60.7% 0.0210 231.0)",
+          "oklch(72.1% 0.0209 231.0)",
+          "oklch(83.6% 0.0123 231.0)",
+          "oklch(95.0% 0.0038 231.0)"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised Surface (light)",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "raised-dark": {
+        "role": "neutral",
+        "displayName": "Raised Surface (dark)",
+        "canonical": "#16303a",
+        "tonalRamp": [
+          "oklch(15.0% 0.0197 225.3)",
+          "oklch(26.4% 0.0347 225.3)",
+          "oklch(37.9% 0.0367 225.3)",
+          "oklch(49.3% 0.0367 225.3)",
+          "oklch(60.7% 0.0367 225.3)",
+          "oklch(72.1% 0.0365 225.3)",
+          "oklch(83.6% 0.0215 225.3)",
+          "oklch(95.0% 0.0066 225.3)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Drawing Ink (ink-900)",
+        "canonical": "#0e1b20",
+        "tonalRamp": [
+          "#f6f7f7",
+          "#eef2f3",
+          "#d3dde0",
+          "#b9c8cc",
+          "#8aa0a8",
+          "#75909a",
+          "#5b6d73",
+          "#33474f",
+          "#1c3038",
+          "#0e1b20",
+          "#0c1a20"
+        ]
+      },
+      "text-dark": {
+        "role": "neutral",
+        "displayName": "Negative Ink",
+        "canonical": "#e8f1f4",
+        "tonalRamp": [
+          "oklch(15.0% 0.0056 219.6)",
+          "oklch(26.4% 0.0098 219.6)",
+          "oklch(37.9% 0.0104 219.6)",
+          "oklch(49.3% 0.0104 219.6)",
+          "oklch(60.7% 0.0104 219.6)",
+          "oklch(72.1% 0.0104 219.6)",
+          "oklch(83.6% 0.0061 219.6)",
+          "oklch(95.0% 0.0019 219.6)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Ink (light)",
+        "canonical": "#33474f",
+        "tonalRamp": [
+          "oklch(15.0% 0.0153 224.5)",
+          "oklch(26.4% 0.0269 224.5)",
+          "oklch(37.9% 0.0285 224.5)",
+          "oklch(49.3% 0.0285 224.5)",
+          "oklch(60.7% 0.0285 224.5)",
+          "oklch(72.1% 0.0284 224.5)",
+          "oklch(83.6% 0.0167 224.5)",
+          "oklch(95.0% 0.0051 224.5)"
+        ]
+      },
+      "text-secondary-dark": {
+        "role": "neutral",
+        "displayName": "Secondary Ink (dark)",
+        "canonical": "#a9c0c8",
+        "tonalRamp": [
+          "oklch(15.0% 0.0148 220.7)",
+          "oklch(26.4% 0.0260 220.7)",
+          "oklch(37.9% 0.0276 220.7)",
+          "oklch(49.3% 0.0276 220.7)",
+          "oklch(60.7% 0.0276 220.7)",
+          "oklch(72.1% 0.0274 220.7)",
+          "oklch(83.6% 0.0162 220.7)",
+          "oklch(95.0% 0.0049 220.7)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink / Folios (light)",
+        "canonical": "#5b6d73",
+        "tonalRamp": [
+          "oklch(15.0% 0.0126 220.0)",
+          "oklch(26.4% 0.0222 220.0)",
+          "oklch(37.9% 0.0236 220.0)",
+          "oklch(49.3% 0.0236 220.0)",
+          "oklch(60.7% 0.0236 220.0)",
+          "oklch(72.1% 0.0234 220.0)",
+          "oklch(83.6% 0.0138 220.0)",
+          "oklch(95.0% 0.0042 220.0)"
+        ]
+      },
+      "text-muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted Ink / Folios (dark)",
+        "canonical": "#7fa2ae",
+        "tonalRamp": [
+          "oklch(15.0% 0.0226 220.8)",
+          "oklch(26.4% 0.0399 220.8)",
+          "oklch(37.9% 0.0423 220.8)",
+          "oklch(49.3% 0.0423 220.8)",
+          "oklch(60.7% 0.0423 220.8)",
+          "oklch(72.1% 0.0420 220.8)",
+          "oklch(83.6% 0.0248 220.8)",
+          "oklch(95.0% 0.0075 220.8)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Functional Border (light, ≥3:1)",
+        "canonical": "#75909a",
+        "tonalRamp": [
+          "oklch(15.0% 0.0182 222.4)",
+          "oklch(26.4% 0.0321 222.4)",
+          "oklch(37.9% 0.0340 222.4)",
+          "oklch(49.3% 0.0340 222.4)",
+          "oklch(60.7% 0.0340 222.4)",
+          "oklch(72.1% 0.0339 222.4)",
+          "oklch(83.6% 0.0200 222.4)",
+          "oklch(95.0% 0.0061 222.4)"
+        ]
+      },
+      "border-dark": {
+        "role": "neutral",
+        "displayName": "Functional Border (dark, ≥3:1)",
+        "canonical": "#5b7684",
+        "tonalRamp": [
+          "oklch(15.0% 0.0205 230.9)",
+          "oklch(26.4% 0.0361 230.9)",
+          "oklch(37.9% 0.0382 230.9)",
+          "oklch(49.3% 0.0382 230.9)",
+          "oklch(60.7% 0.0382 230.9)",
+          "oklch(72.1% 0.0380 230.9)",
+          "oklch(83.6% 0.0224 230.9)",
+          "oklch(95.0% 0.0068 230.9)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Decorative Hairline (light)",
+        "canonical": "#d3dde0",
+        "tonalRamp": [
+          "oklch(15.0% 0.0062 217.6)",
+          "oklch(26.4% 0.0109 217.6)",
+          "oklch(37.9% 0.0116 217.6)",
+          "oklch(49.3% 0.0116 217.6)",
+          "oklch(60.7% 0.0116 217.6)",
+          "oklch(72.1% 0.0115 217.6)",
+          "oklch(83.6% 0.0068 217.6)",
+          "oklch(95.0% 0.0021 217.6)"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Decorative Hairline (dark)",
+        "canonical": "#24404c",
+        "tonalRamp": [
+          "oklch(15.0% 0.0213 227.3)",
+          "oklch(26.4% 0.0375 227.3)",
+          "oklch(37.9% 0.0398 227.3)",
+          "oklch(49.3% 0.0398 227.3)",
+          "oklch(60.7% 0.0398 227.3)",
+          "oklch(72.1% 0.0396 227.3)",
+          "oklch(83.6% 0.0233 227.3)",
+          "oklch(95.0% 0.0071 227.3)"
+        ]
+      },
+      "success-solid": {
+        "role": "semantic",
+        "displayName": "Success Solid (invariant)",
+        "canonical": "#1a7f4e",
+        "tonalRamp": [
+          "oklch(15.0% 0.0632 156.4)",
+          "oklch(26.4% 0.1113 156.4)",
+          "oklch(37.9% 0.1179 156.4)",
+          "oklch(49.3% 0.1179 156.4)",
+          "oklch(60.7% 0.1179 156.4)",
+          "oklch(72.1% 0.1173 156.4)",
+          "oklch(83.6% 0.0692 156.4)",
+          "oklch(95.0% 0.0211 156.4)"
+        ]
+      },
+      "on-success": {
+        "role": "semantic",
+        "displayName": "On-Success Solid",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "success-text": {
+        "role": "semantic",
+        "displayName": "Success Text (light)",
+        "canonical": "#176b43",
+        "tonalRamp": [
+          "oklch(15.0% 0.0543 157.2)",
+          "oklch(26.4% 0.0957 157.2)",
+          "oklch(37.9% 0.1014 157.2)",
+          "oklch(49.3% 0.1014 157.2)",
+          "oklch(60.7% 0.1014 157.2)",
+          "oklch(72.1% 0.1009 157.2)",
+          "oklch(83.6% 0.0595 157.2)",
+          "oklch(95.0% 0.0181 157.2)"
+        ]
+      },
+      "success-text-dark": {
+        "role": "semantic",
+        "displayName": "Success Text (dark)",
+        "canonical": "#45d08a",
+        "tonalRamp": [
+          "oklch(15.0% 0.0839 157.1)",
+          "oklch(26.4% 0.1478 157.1)",
+          "oklch(37.9% 0.1566 157.1)",
+          "oklch(49.3% 0.1566 157.1)",
+          "oklch(60.7% 0.1566 157.1)",
+          "oklch(72.1% 0.1558 157.1)",
+          "oklch(83.6% 0.0919 157.1)",
+          "oklch(95.0% 0.0280 157.1)"
+        ]
+      },
+      "success-tint": {
+        "role": "semantic",
+        "displayName": "Success Tint (light)",
+        "canonical": "#e9f5ee",
+        "tonalRamp": [
+          "oklch(15.0% 0.0084 160.6)",
+          "oklch(26.4% 0.0148 160.6)",
+          "oklch(37.9% 0.0157 160.6)",
+          "oklch(49.3% 0.0157 160.6)",
+          "oklch(60.7% 0.0157 160.6)",
+          "oklch(72.1% 0.0156 160.6)",
+          "oklch(83.6% 0.0092 160.6)",
+          "oklch(95.0% 0.0028 160.6)"
+        ]
+      },
+      "success-tint-dark": {
+        "role": "semantic",
+        "displayName": "Success Tint (dark)",
+        "canonical": "#122b22",
+        "tonalRamp": [
+          "oklch(15.0% 0.0192 168.0)",
+          "oklch(26.4% 0.0338 168.0)",
+          "oklch(37.9% 0.0358 168.0)",
+          "oklch(49.3% 0.0358 168.0)",
+          "oklch(60.7% 0.0358 168.0)",
+          "oklch(72.1% 0.0356 168.0)",
+          "oklch(83.6% 0.0210 168.0)",
+          "oklch(95.0% 0.0064 168.0)"
+        ]
+      },
+      "warning-solid": {
+        "role": "semantic",
+        "displayName": "Warning Solid (invariant)",
+        "canonical": "#e8a013",
+        "tonalRamp": [
+          "oklch(15.0% 0.0835 75.8)",
+          "oklch(26.4% 0.1471 75.8)",
+          "oklch(37.9% 0.1558 75.8)",
+          "oklch(49.3% 0.1558 75.8)",
+          "oklch(60.7% 0.1558 75.8)",
+          "oklch(72.1% 0.1550 75.8)",
+          "oklch(83.6% 0.0914 75.8)",
+          "oklch(95.0% 0.0278 75.8)"
+        ]
+      },
+      "on-warning": {
+        "role": "semantic",
+        "displayName": "On-Warning Solid",
+        "canonical": "#0e1b20",
+        "tonalRamp": [
+          "oklch(15.0% 0.0111 224.2)",
+          "oklch(26.4% 0.0196 224.2)",
+          "oklch(37.9% 0.0207 224.2)",
+          "oklch(49.3% 0.0207 224.2)",
+          "oklch(60.7% 0.0207 224.2)",
+          "oklch(72.1% 0.0206 224.2)",
+          "oklch(83.6% 0.0122 224.2)",
+          "oklch(95.0% 0.0037 224.2)"
+        ]
+      },
+      "warning-text": {
+        "role": "semantic",
+        "displayName": "Warning Text (light)",
+        "canonical": "#8a5800",
+        "tonalRamp": [
+          "oklch(15.0% 0.0580 71.5)",
+          "oklch(26.4% 0.1021 71.5)",
+          "oklch(37.9% 0.1082 71.5)",
+          "oklch(49.3% 0.1082 71.5)",
+          "oklch(60.7% 0.1082 71.5)",
+          "oklch(72.1% 0.1077 71.5)",
+          "oklch(83.6% 0.0635 71.5)",
+          "oklch(95.0% 0.0193 71.5)"
+        ]
+      },
+      "warning-text-dark": {
+        "role": "semantic",
+        "displayName": "Warning Text (dark)",
+        "canonical": "#f0b429",
+        "tonalRamp": [
+          "oklch(15.0% 0.0834 82.5)",
+          "oklch(26.4% 0.1470 82.5)",
+          "oklch(37.9% 0.1558 82.5)",
+          "oklch(49.3% 0.1558 82.5)",
+          "oklch(60.7% 0.1558 82.5)",
+          "oklch(72.1% 0.1550 82.5)",
+          "oklch(83.6% 0.0914 82.5)",
+          "oklch(95.0% 0.0278 82.5)"
+        ]
+      },
+      "warning-tint": {
+        "role": "semantic",
+        "displayName": "Warning Tint (light)",
+        "canonical": "#fdf3dd",
+        "tonalRamp": [
+          "oklch(15.0% 0.0165 86.5)",
+          "oklch(26.4% 0.0291 86.5)",
+          "oklch(37.9% 0.0308 86.5)",
+          "oklch(49.3% 0.0308 86.5)",
+          "oklch(60.7% 0.0308 86.5)",
+          "oklch(72.1% 0.0307 86.5)",
+          "oklch(83.6% 0.0181 86.5)",
+          "oklch(95.0% 0.0055 86.5)"
+        ]
+      },
+      "warning-tint-dark": {
+        "role": "semantic",
+        "displayName": "Warning Tint (dark)",
+        "canonical": "#2e2410",
+        "tonalRamp": [
+          "oklch(15.0% 0.0193 83.4)",
+          "oklch(26.4% 0.0339 83.4)",
+          "oklch(37.9% 0.0360 83.4)",
+          "oklch(49.3% 0.0360 83.4)",
+          "oklch(60.7% 0.0360 83.4)",
+          "oklch(72.1% 0.0358 83.4)",
+          "oklch(83.6% 0.0211 83.4)",
+          "oklch(95.0% 0.0064 83.4)"
+        ]
+      },
+      "error-solid": {
+        "role": "semantic",
+        "displayName": "Error Solid (invariant)",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "oklch(15.0% 0.0955 28.7)",
+          "oklch(26.4% 0.1683 28.7)",
+          "oklch(37.9% 0.1783 28.7)",
+          "oklch(49.3% 0.1783 28.7)",
+          "oklch(60.7% 0.1783 28.7)",
+          "oklch(72.1% 0.1774 28.7)",
+          "oklch(83.6% 0.1046 28.7)",
+          "oklch(95.0% 0.0318 28.7)"
+        ]
+      },
+      "on-error": {
+        "role": "semantic",
+        "displayName": "On-Error Solid",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "error-text": {
+        "role": "semantic",
+        "displayName": "Error Text (light)",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "oklch(15.0% 0.0955 28.7)",
+          "oklch(26.4% 0.1683 28.7)",
+          "oklch(37.9% 0.1783 28.7)",
+          "oklch(49.3% 0.1783 28.7)",
+          "oklch(60.7% 0.1783 28.7)",
+          "oklch(72.1% 0.1774 28.7)",
+          "oklch(83.6% 0.1046 28.7)",
+          "oklch(95.0% 0.0318 28.7)"
+        ]
+      },
+      "error-text-dark": {
+        "role": "semantic",
+        "displayName": "Error Text (dark)",
+        "canonical": "#ff8a80",
+        "tonalRamp": [
+          "oklch(15.0% 0.0769 26.1)",
+          "oklch(26.4% 0.1355 26.1)",
+          "oklch(37.9% 0.1435 26.1)",
+          "oklch(49.3% 0.1435 26.1)",
+          "oklch(60.7% 0.1435 26.1)",
+          "oklch(72.1% 0.1428 26.1)",
+          "oklch(83.6% 0.0842 26.1)",
+          "oklch(95.0% 0.0256 26.1)"
+        ]
+      },
+      "error-tint": {
+        "role": "semantic",
+        "displayName": "Error Tint (light)",
+        "canonical": "#fbeae8",
+        "tonalRamp": [
+          "oklch(15.0% 0.0100 25.6)",
+          "oklch(26.4% 0.0177 25.6)",
+          "oklch(37.9% 0.0188 25.6)",
+          "oklch(49.3% 0.0188 25.6)",
+          "oklch(60.7% 0.0188 25.6)",
+          "oklch(72.1% 0.0187 25.6)",
+          "oklch(83.6% 0.0110 25.6)",
+          "oklch(95.0% 0.0033 25.6)"
+        ]
+      },
+      "error-tint-dark": {
+        "role": "semantic",
+        "displayName": "Error Tint (dark)",
+        "canonical": "#331a17",
+        "tonalRamp": [
+          "oklch(15.0% 0.0217 27.6)",
+          "oklch(26.4% 0.0383 27.6)",
+          "oklch(37.9% 0.0406 27.6)",
+          "oklch(49.3% 0.0406 27.6)",
+          "oklch(60.7% 0.0406 27.6)",
+          "oklch(72.1% 0.0404 27.6)",
+          "oklch(83.6% 0.0238 27.6)",
+          "oklch(95.0% 0.0072 27.6)"
+        ]
+      },
+      "iaitech-solid": {
+        "role": "accent",
+        "displayName": "iAItech Violet Solid (invariant)",
+        "canonical": "#6449c8",
+        "tonalRamp": [
+          "oklch(15.0% 0.1006 287.5)",
+          "oklch(26.4% 0.1773 287.5)",
+          "oklch(37.9% 0.1878 287.5)",
+          "oklch(49.3% 0.1878 287.5)",
+          "oklch(60.7% 0.1878 287.5)",
+          "oklch(72.1% 0.1869 287.5)",
+          "oklch(83.6% 0.1102 287.5)",
+          "oklch(95.0% 0.0335 287.5)"
+        ]
+      },
+      "on-iaitech": {
+        "role": "accent",
+        "displayName": "On-iAItech Solid",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.9)",
+          "oklch(26.4% 0.0000 89.9)",
+          "oklch(37.9% 0.0000 89.9)",
+          "oklch(49.3% 0.0000 89.9)",
+          "oklch(60.7% 0.0000 89.9)",
+          "oklch(72.1% 0.0000 89.9)",
+          "oklch(83.6% 0.0000 89.9)",
+          "oklch(95.0% 0.0000 89.9)"
+        ]
+      },
+      "iaitech-text": {
+        "role": "accent",
+        "displayName": "iAItech Text (light)",
+        "canonical": "#5b3fc0",
+        "tonalRamp": [
+          "oklch(15.0% 0.1023 286.7)",
+          "oklch(26.4% 0.1802 286.7)",
+          "oklch(37.9% 0.1909 286.7)",
+          "oklch(49.3% 0.1909 286.7)",
+          "oklch(60.7% 0.1909 286.7)",
+          "oklch(72.1% 0.1899 286.7)",
+          "oklch(83.6% 0.1120 286.7)",
+          "oklch(95.0% 0.0341 286.7)"
+        ]
+      },
+      "iaitech-text-dark": {
+        "role": "accent",
+        "displayName": "iAItech Text (dark)",
+        "canonical": "#b39df5",
+        "tonalRamp": [
+          "oklch(15.0% 0.0675 294.7)",
+          "oklch(26.4% 0.1189 294.7)",
+          "oklch(37.9% 0.1260 294.7)",
+          "oklch(49.3% 0.1260 294.7)",
+          "oklch(60.7% 0.1260 294.7)",
+          "oklch(72.1% 0.1253 294.7)",
+          "oklch(83.6% 0.0739 294.7)",
+          "oklch(95.0% 0.0225 294.7)"
+        ]
+      },
+      "iaitech-tint": {
+        "role": "accent",
+        "displayName": "iAItech Tint (light)",
+        "canonical": "#efebfa",
+        "tonalRamp": [
+          "oklch(15.0% 0.0109 298.2)",
+          "oklch(26.4% 0.0193 298.2)",
+          "oklch(37.9% 0.0204 298.2)",
+          "oklch(49.3% 0.0204 298.2)",
+          "oklch(60.7% 0.0204 298.2)",
+          "oklch(72.1% 0.0203 298.2)",
+          "oklch(83.6% 0.0120 298.2)",
+          "oklch(95.0% 0.0036 298.2)"
+        ]
+      },
+      "iaitech-tint-dark": {
+        "role": "accent",
+        "displayName": "iAItech Tint (dark)",
+        "canonical": "#241d3d",
+        "tonalRamp": [
+          "oklch(15.0% 0.0316 291.8)",
+          "oklch(26.4% 0.0557 291.8)",
+          "oklch(37.9% 0.0590 291.8)",
+          "oklch(49.3% 0.0590 291.8)",
+          "oklch(60.7% 0.0590 291.8)",
+          "oklch(72.1% 0.0587 291.8)",
+          "oklch(83.6% 0.0346 291.8)",
+          "oklch(95.0% 0.0105 291.8)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display · Sora 800",
+        "purpose": "Specimen headlines, KPI values, slide cover titles. Never paragraphs."
+      },
+      "headline": {
+        "displayName": "Headline · Sora 700",
+        "purpose": "Lámina title in every sheet head strip (text-xl, balanced)."
+      },
+      "title": {
+        "displayName": "Title · Sora 600",
+        "purpose": "Product lockup names (lg), dialog headings (md/700), tagline (md/600 primary)."
+      },
+      "body": {
+        "displayName": "Body · Source Sans 3 400",
+        "purpose": "Reading column at 68ch measure, leading 1.5; notes at sm/1.65."
+      },
+      "label": {
+        "displayName": "UI Label · Source Sans 3 600",
+        "purpose": "Buttons, field labels, tabs, table body (sm)."
+      },
+      "mono": {
+        "displayName": "Measurement · IBM Plex Mono 400",
+        "purpose": "Data, tokens, code, dimension labels, folios (xs, tracking 0.02em, tabular-nums). Never decorative."
+      },
+      "label-caps": {
+        "displayName": "Caps Label · IBM Plex Mono 500",
+        "purpose": "Short uppercase labels only: notas title, cajetín keys, KPI labels (xs, tracking 0.12em)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-1-light",
+        "value": "0 1px 2px rgb(14 27 32 / 0.08), 0 1px 1px rgb(14 27 32 / 0.04)",
+        "purpose": "Resting lift for small raised parts. Published; not yet exercised by the build."
+      },
+      {
+        "name": "shadow-1-dark",
+        "value": "0 1px 2px rgb(0 0 0 / 0.4)",
+        "purpose": "Dark-register resting lift."
+      },
+      {
+        "name": "shadow-2-light",
+        "value": "0 4px 12px rgb(14 27 32 / 0.10)",
+        "purpose": "Hover/medium lift. Published; not yet exercised."
+      },
+      {
+        "name": "shadow-2-dark",
+        "value": "0 4px 12px rgb(0 0 0 / 0.45)",
+        "purpose": "Dark-register medium lift."
+      },
+      {
+        "name": "shadow-3-light",
+        "value": "0 12px 32px rgb(14 27 32 / 0.16)",
+        "purpose": "The modal layer — the only shadow the build renders (native dialog)."
+      },
+      {
+        "name": "shadow-3-dark",
+        "value": "0 12px 32px rgb(0 0 0 / 0.55)",
+        "purpose": "Dark-register modal layer."
+      },
+      {
+        "name": "dialog-backdrop",
+        "value": "rgb(12 26 32 / .55)",
+        "purpose": "Ink-950 backdrop at 55% behind dialog::backdrop; overscroll-behavior contain."
+      }
+    ],
+    "motion": [
+      {
+        "name": "duration-fast",
+        "value": "120ms",
+        "purpose": "All component state transitions (background, border, opacity, translate)."
+      },
+      {
+        "name": "duration-base",
+        "value": "200ms",
+        "purpose": "Published for richer surfaces; not yet exercised by the build."
+      },
+      {
+        "name": "duration-slow",
+        "value": "320ms",
+        "purpose": "Published for richer surfaces; not yet exercised by the build."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.2, 0.7, 0.3, 1)",
+        "purpose": "The single shared easing curve."
+      },
+      {
+        "name": "cotas-draw-in",
+        "value": "stroke-dashoffset 900ms cubic-bezier(0.2,0.7,0.3,1)",
+        "purpose": "The one authored moment: lámina 00 dimension lines draw once on entry (pathLength=1, IO threshold 0.35). Reduced-motion renders the finished state."
+      },
+      {
+        "name": "cotas-label-fade",
+        "value": "opacity 500ms cubic-bezier(0.2,0.7,0.3,1) 650ms",
+        "purpose": "Dimension labels fade in after the strokes, same one-time moment."
+      },
+      {
+        "name": "busy-spin",
+        "value": "spin 1s linear infinite",
+        "purpose": "aria-busy button spinner only."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce → .01ms durations, scroll-behavior auto",
+        "purpose": "Global kill-switch for non-essential animation; rail scrolling falls back to auto."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "notes-collapse",
+        "value": "1180px",
+        "purpose": "Lámina 00 notes drop below the drawing; versions grid 5→3; misuse grid 4→2."
+      },
+      {
+        "name": "index-strip",
+        "value": "1024px",
+        "purpose": "Index becomes sticky horizontal strip; all multi-grids collapse; cajetín 4→2 columns."
+      },
+      {
+        "name": "table-release",
+        "value": "700px",
+        "purpose": "Stacked tables drop internal max-height (container queries cannot style their own container)."
+      },
+      {
+        "name": "sheet-pan",
+        "value": "640px",
+        "purpose": "Drawing plates pan horizontally (min 540px, centered on the piece); slide rail fixes at 640px columns."
+      },
+      {
+        "name": "table-stack (container)",
+        "value": "620px",
+        "purpose": "Container query on .table-wrap: rows become labeled cards."
+      }
+    ],
+    "logo": {
+      "geometry": {
+        "viewBox": "0 0 200 100",
+        "fullBBox": {
+          "w": 155.07,
+          "h": 96.04,
+          "ratio": 1.615
+        },
+        "ring": {
+          "diameter": 40.53,
+          "center": [
+            42.25,
+            22.23
+          ]
+        },
+        "cross": {
+          "size": 21.93,
+          "arm": 6.03,
+          "center": [
+            42.23,
+            22.23
+          ]
+        },
+        "$note": "Medido por muestreo de las curvas del SVG aprobado; anillo y cruz concéntricos."
+      },
+      "clearspace": {
+        "value": "1x",
+        "x": "altura del anillo (40.53 u)",
+        "rule": "Perímetro libre de texto, bordes y otros logotipos en todas las versiones."
+      },
+      "minSize": {
+        "digitalFull": "96px de ancho",
+        "digitalIsotipo": "24px",
+        "printFull": "24mm de ancho",
+        "printIsotipo": "6mm"
+      },
+      "versions": [
+        "principal (teal)",
+        "monocroma tinta",
+        "negativo (blanco)",
+        "isotipo",
+        "cruz (favicon/marca de agua)"
+      ],
+      "files": {
+        "primary": "assets/logo/iar-logo.svg",
+        "monoInk": "assets/logo/iar-logo-mono-ink.svg",
+        "negative": "assets/logo/iar-logo-negative.svg",
+        "isotipo": "assets/logo/iar-isotipo.svg",
+        "isotipoNegative": "assets/logo/iar-isotipo-negative.svg"
+      }
+    },
+    "contrastAudit": [
+      {
+        "pair": [
+          "#05677f",
+          "#ffffff"
+        ],
+        "ratio": 6.46,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#05677f",
+          "#f6f7f7"
+        ],
+        "ratio": 6.01,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#0e1b20",
+          "#ffffff"
+        ],
+        "ratio": 17.55,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#33474f",
+          "#ffffff"
+        ],
+        "ratio": 9.74,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#5b6d73",
+          "#ffffff"
+        ],
+        "ratio": 5.41,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#5b6d73",
+          "#f6f7f7"
+        ],
+        "ratio": 5.04,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#ffffff",
+          "#05677f"
+        ],
+        "ratio": 6.46,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#e8f1f4",
+          "#0c1a20"
+        ],
+        "ratio": 15.47,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#a9c0c8",
+          "#0c1a20"
+        ],
+        "ratio": 9.34,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#7fa2ae",
+          "#0c1a20"
+        ],
+        "ratio": 6.49,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#7fa2ae",
+          "#10242d"
+        ],
+        "ratio": 5.85,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#4cc3dd",
+          "#0c1a20"
+        ],
+        "ratio": 8.58,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#4cc3dd",
+          "#10242d"
+        ],
+        "ratio": 7.74,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#06222c",
+          "#4cc3dd"
+        ],
+        "ratio": 7.98,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#ffffff",
+          "#1a7f4e"
+        ],
+        "ratio": 5.01,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#0e1b20",
+          "#e8a013"
+        ],
+        "ratio": 7.92,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#ffffff",
+          "#b3261e"
+        ],
+        "ratio": 6.54,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#ffffff",
+          "#6449c8"
+        ],
+        "ratio": 6.31,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#176b43",
+          "#ffffff"
+        ],
+        "ratio": 6.52,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#45d08a",
+          "#0c1a20"
+        ],
+        "ratio": 8.99,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#8a5800",
+          "#ffffff"
+        ],
+        "ratio": 6.04,
+        "level": "AA"
+      },
+      {
+        "pair": [
+          "#f0b429",
+          "#0c1a20"
+        ],
+        "ratio": 9.51,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#ff8a80",
+          "#0c1a20"
+        ],
+        "ratio": 7.77,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#5b3fc0",
+          "#ffffff"
+        ],
+        "ratio": 7.2,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#b39df5",
+          "#0c1a20"
+        ],
+        "ratio": 7.65,
+        "level": "AAA"
+      },
+      {
+        "pair": [
+          "#75909a",
+          "#ffffff"
+        ],
+        "ratio": 3.38,
+        "level": "UI 3:1"
+      },
+      {
+        "pair": [
+          "#5b7684",
+          "#0c1a20"
+        ],
+        "ratio": 3.69,
+        "level": "UI 3:1"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action: corporate teal fill + audited on-primary pair; inverts pair (never role) in dark.",
+      "html": "<button class=\"ds-btn ds-btn-primary\" type=\"button\">Guardar cambios</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);font-weight:600;line-height:1.5;padding:9px 18px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:background-color 120ms cubic-bezier(.2,.7,.3,1),border-color 120ms cubic-bezier(.2,.7,.3,1);}.ds-btn:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:2px;border-radius:4px;}.ds-btn:disabled{opacity:.5;cursor:not-allowed;}.ds-btn .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}.ds-btn-primary{background:var(--color-primary,#05677f);color:var(--color-on-primary,#ffffff);}.ds-btn-primary:hover:not(:disabled){background:var(--color-primary-hover,#04566b);}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Cancel / sheet navigation: surface fill, ink text, 1px functional border (≥3:1), sunken hover.",
+      "html": "<button class=\"ds-btn ds-btn-secondary\" type=\"button\">Cancelar</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);font-weight:600;line-height:1.5;padding:9px 18px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:background-color 120ms cubic-bezier(.2,.7,.3,1),border-color 120ms cubic-bezier(.2,.7,.3,1);}.ds-btn:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:2px;border-radius:4px;}.ds-btn:disabled{opacity:.5;cursor:not-allowed;}.ds-btn .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}.ds-btn-secondary{background:var(--color-surface,#ffffff);color:var(--color-text,#0e1b20);border-color:var(--color-border,#75909a);}.ds-btn-secondary:hover:not(:disabled){background:var(--color-sunken,#eef2f3);}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Tertiary action: transparent, primary text, primary-tint hover.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\" type=\"button\">Ver histórico</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);font-weight:600;line-height:1.5;padding:9px 18px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:background-color 120ms cubic-bezier(.2,.7,.3,1),border-color 120ms cubic-bezier(.2,.7,.3,1);}.ds-btn:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:2px;border-radius:4px;}.ds-btn:disabled{opacity:.5;cursor:not-allowed;}.ds-btn .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}.ds-btn-ghost{background:transparent;color:var(--color-primary,#05677f);}.ds-btn-ghost:hover:not(:disabled){background:var(--color-primary-tint,#eef6f8);}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive action: invariant error solid + white; hover mixes 15% black into the solid.",
+      "html": "<button class=\"ds-btn ds-btn-danger\" type=\"button\">Cerrar orden</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);font-weight:600;line-height:1.5;padding:9px 18px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:background-color 120ms cubic-bezier(.2,.7,.3,1),border-color 120ms cubic-bezier(.2,.7,.3,1);}.ds-btn:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:2px;border-radius:4px;}.ds-btn:disabled{opacity:.5;cursor:not-allowed;}.ds-btn .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}.ds-btn-danger{background:var(--iar-error-solid,#b3261e);color:var(--iar-on-error,#ffffff);}.ds-btn-danger:hover:not(:disabled){background:color-mix(in oklab,var(--iar-error-solid,#b3261e) 85%,black);}"
+    },
+    {
+      "name": "Text Field (hint + error)",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Label above, functional 1px border, 4px radius; error = solid border + icon + recovery message, never color alone.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-ot\">Código de orden</label><input id=\"ds-ot\" type=\"text\" value=\"OT-2418\"><p class=\"ds-hint\">Formato OT-0000, asignado por el GMAO.</p></div><div class=\"ds-field ds-field-error\"><label for=\"ds-fecha\">Fecha de intervención</label><input id=\"ds-fecha\" type=\"text\" value=\"32/13/2026\" aria-invalid=\"true\" aria-describedby=\"ds-fecha-error\"><p class=\"ds-error-msg\" id=\"ds-fecha-error\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M9.5 9.5l5 5M14.5 9.5l-5 5\"/></svg>Fecha no válida. Usa dd/mm/aaaa, p. ej. 20/11/2026.</p></div>",
+      "css": ".ds-field{display:grid;gap:.25rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;max-inline-size:320px;margin-block-end:1rem;}.ds-field label{font-size:clamp(.875rem,.84rem + .18vw,.9375rem);font-weight:600;color:var(--color-text,#0e1b20);}.ds-field input{font:inherit;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);color:var(--color-text,#0e1b20);background:var(--color-surface,#ffffff);border:1px solid var(--color-border,#75909a);border-radius:4px;padding:8px 12px;inline-size:100%;box-sizing:border-box;}.ds-field input:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:1px;}.ds-hint{margin:0;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-text-muted,#5b6d73);}.ds-field-error input[aria-invalid='true']{border-color:var(--iar-error-solid,#b3261e);}.ds-error-msg{margin:0;display:flex;gap:.5rem;align-items:flex-start;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-error-text,#b3261e);}.ds-error-msg .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-block-start:1px;}"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Full-pill state filters with aria-pressed; selected fills primary. Width follows content (FR-safe).",
+      "html": "<span class=\"ds-chips\" role=\"group\" aria-label=\"Filtrar por estado\"><button class=\"ds-chip is-on\" type=\"button\" aria-pressed=\"true\">Todas</button><button class=\"ds-chip\" type=\"button\" aria-pressed=\"false\">Abierta</button><button class=\"ds-chip\" type=\"button\" aria-pressed=\"false\">En curso</button></span>",
+      "css": ".ds-chips{display:inline-flex;gap:.5rem;flex-wrap:wrap;}.ds-chip{font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);font-weight:600;cursor:pointer;padding:5px 12px;border-radius:999px;border:1px solid var(--color-border,#75909a);background:var(--color-surface,#ffffff);color:var(--color-text-secondary,#33474f);transition:background-color 120ms cubic-bezier(.2,.7,.3,1);}.ds-chip:hover{background:var(--color-sunken,#eef2f3);}.ds-chip:focus-visible{outline:2px solid var(--color-focus,#05677f);outline-offset:2px;}.ds-chip.is-on{background:var(--color-primary,#05677f);border-color:var(--color-primary,#05677f);color:var(--color-on-primary,#ffffff);}"
+    },
+    {
+      "name": "Status & Product Badges",
+      "kind": "chip",
+      "refersTo": "badge-success",
+      "description": "Invariant semantic solids + icon + text (never color alone); product badges on primary tint; violet reserved for iAItech.",
+      "html": "<span class=\"ds-badges\"><span class=\"ds-badge ds-badge-success\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>Cerrada</span><span class=\"ds-badge ds-badge-warning\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4.5 21 19.5H3Z\"/><path d=\"M12 10v4\"/><path d=\"M12 16.8v.2\"/></svg>Abierta</span><span class=\"ds-badge ds-badge-info\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\" stroke-dasharray=\"40 14\"/></svg>En curso</span><span class=\"ds-badge ds-badge-error\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M9.5 9.5l5 5M14.5 9.5l-5 5\"/></svg>Parada</span><span class=\"ds-badge ds-badge-product\">SMflow</span><span class=\"ds-badge ds-badge-ia\">iAItech</span></span>",
+      "css": ".ds-badges{display:flex;flex-wrap:wrap;gap:.5rem;}.ds-badge{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);font-weight:500;letter-spacing:.02em;padding:3px 10px;border-radius:999px;border:1px solid transparent;}.ds-badge .ds-icon{width:.95em;height:.95em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}.ds-badge-success{background:var(--iar-success-solid,#1a7f4e);color:var(--iar-on-success,#ffffff);}.ds-badge-warning{background:var(--iar-warning-solid,#e8a013);color:var(--iar-on-warning,#0e1b20);}.ds-badge-info{background:var(--iar-info-solid,#05677f);color:var(--iar-on-info,#ffffff);}.ds-badge-error{background:var(--iar-error-solid,#b3261e);color:var(--iar-on-error,#ffffff);}.ds-badge-product{background:var(--color-primary-tint,#eef6f8);color:var(--color-on-primary-tint,#04566b);border-color:var(--color-line,#d3dde0);}.ds-badge-ia{background:var(--color-iaitech-tint,#efebfa);color:var(--color-iaitech-text,#5b3fc0);border-color:color-mix(in oklab,var(--iar-iaitech-solid,#6449c8) 40%,var(--color-surface,#ffffff));}"
+    },
+    {
+      "name": "Alerts",
+      "kind": "custom",
+      "refersTo": "alert-success",
+      "description": "Tint ground per mode + 45–50% solid-mix border + semantic-text icon; bold title + secondary body.",
+      "html": "<div class=\"ds-alerts\"><div class=\"ds-alert ds-alert-success\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg><div><b>Orden cerrada</b><p>La OT-2419 quedó registrada en el histórico.</p></div></div><div class=\"ds-alert ds-alert-warning\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4.5 21 19.5H3Z\"/><path d=\"M12 10v4\"/><path d=\"M12 16.8v.2\"/></svg><div><b>Stock bajo</b><p>Quedan 2 unidades del repuesto R-118.</p></div></div><div class=\"ds-alert ds-alert-error\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M9.5 9.5l5 5M14.5 9.5l-5 5\"/></svg><div><b>Parada de línea</b><p>El compresor A superó el umbral de vibración.</p></div></div><div class=\"ds-alert ds-alert-info\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M12 11v5.5\"/><path d=\"M12 7.8v.2\"/></svg><div><b>Mantenimiento predictivo</b><p>El modelo sugiere revisar el horno 2 en 14 días.</p></div></div></div>",
+      "css": ".ds-alerts{display:grid;gap:.75rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;max-inline-size:480px;}.ds-alert{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.75rem;padding:.75rem 1rem;border-radius:8px;border:1px solid;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);color:var(--color-text,#0e1b20);}.ds-alert .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-block-start:3px;}.ds-alert b{display:block;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);}.ds-alert p{margin:2px 0 0;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-text-secondary,#33474f);}.ds-alert-success{background:var(--color-success-tint,#e9f5ee);border-color:color-mix(in oklab,var(--iar-success-solid,#1a7f4e) 45%,var(--color-surface,#ffffff));}.ds-alert-success .ds-icon{color:var(--color-success-text,#176b43);}.ds-alert-warning{background:var(--color-warning-tint,#fdf3dd);border-color:color-mix(in oklab,var(--iar-warning-solid,#e8a013) 50%,var(--color-surface,#ffffff));}.ds-alert-warning .ds-icon{color:var(--color-warning-text,#8a5800);}.ds-alert-error{background:var(--color-error-tint,#fbeae8);border-color:color-mix(in oklab,var(--iar-error-solid,#b3261e) 45%,var(--color-surface,#ffffff));}.ds-alert-error .ds-icon{color:var(--color-error-text,#b3261e);}.ds-alert-info{background:var(--color-info-tint,#eef6f8);border-color:color-mix(in oklab,var(--iar-info-solid,#05677f) 45%,var(--color-surface,#ffffff));}.ds-alert-info .ds-icon{color:var(--color-info-text,#05677f);}"
+    },
+    {
+      "name": "KPI Card",
+      "kind": "card",
+      "refersTo": "plate",
+      "description": "Mono caps label, Sora 800 tabular value with small unit, mono delta with direction icon + text. Demo figures are synthetic.",
+      "html": "<div class=\"ds-kpi\"><span class=\"ds-kpi-label\">OEE línea 04</span><span class=\"ds-kpi-value\">87,2<span class=\"ds-kpi-unit\">%</span></span><span class=\"ds-kpi-delta\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 19V5M6 11l6-6 6 6\"/></svg>+2,4 pp vs. mes anterior</span></div>",
+      "css": ".ds-kpi{display:grid;gap:.5rem;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;font-variant-numeric:tabular-nums;}.ds-kpi-label{font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted,#5b6d73);}.ds-kpi-value{font-family:'Sora','Segoe UI',system-ui,sans-serif;font-weight:800;font-size:clamp(2.25rem,1.85rem + 1.8vw,3rem);letter-spacing:-.015em;line-height:1;color:var(--color-text,#0e1b20);}.ds-kpi-unit{font-size:.5em;font-weight:600;margin-inline-start:2px;color:var(--color-text-secondary,#33474f);}.ds-kpi-delta{display:inline-flex;gap:.25rem;align-items:center;font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-success-text,#176b43);}.ds-kpi-delta .ds-icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;}"
+    },
+    {
+      "name": "Cajetín (title block)",
+      "kind": "custom",
+      "refersTo": "cajetin",
+      "description": "Signature sheet foot: 4-column grid, 2px frame border, hairline dividers, mono caps keys + 600 values. Every lámina carries one.",
+      "html": "<div class=\"ds-cajetin\" role=\"table\" aria-label=\"Cajetín de la lámina\"><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Proyecto</span><span class=\"ds-v\">Manual de Identidad Corporativa 2027</span></div><div class=\"ds-cj ds-wide\"><span class=\"ds-k\">Empresa</span><span class=\"ds-v\">Industrial Augmented Reality S.L.</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Hoja</span><span class=\"ds-v\">03 de 07</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Escala</span><span class=\"ds-v\">—</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Rev</span><span class=\"ds-v\">1.0</span></div><div class=\"ds-cj\"><span class=\"ds-k\">Fecha</span><span class=\"ds-v\">2026-11</span></div></div>",
+      "css": ".ds-cajetin{--frame:color-mix(in oklab,var(--color-text,#0e1b20) 62%,var(--color-bg,#f6f7f7));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--frame);background:var(--color-surface,#ffffff);font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;color:var(--color-text,#0e1b20);font-variant-numeric:tabular-nums;}.ds-cj{padding:.5rem .75rem;border-inline-start:1px solid var(--color-line,#d3dde0);border-block-start:1px solid var(--color-line,#d3dde0);}.ds-cj:nth-child(-n+4){border-block-start:0;}.ds-cj:nth-child(4n+1){border-inline-start:0;}.ds-cj.ds-wide{grid-column:span 2;}.ds-k{display:block;font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted,#5b6d73);}.ds-v{font-weight:600;font-size:clamp(.875rem,.84rem + .18vw,.9375rem);}"
+    },
+    {
+      "name": "Lámina (drawing sheet)",
+      "kind": "custom",
+      "refersTo": "plate",
+      "description": "The world's signature surface: 24px teal retícula over sunken paper, double perimeter rule (2px + 1px outline at −8px), boxed folio + Sora title + mono meta head strip. The grid is the measurement surface — intentional, not decoration.",
+      "html": "<section class=\"ds-lamina\"><header class=\"ds-lamina-head\"><span class=\"ds-hoja-id\">LÁMINA 03/07</span><h2>Color y tokens</h2><span class=\"ds-head-meta\">WCAG 2.2 · REV 1.0</span></header><div class=\"ds-plate\"><div class=\"ds-plate-stage\">Pieza central acotada</div><div class=\"ds-plate-cap\"><span>Pieza 03.1 · Color principal</span><span>fijado por dirección</span></div></div></section>",
+      "css": ".ds-lamina{--frame:color-mix(in oklab,var(--color-text,#0e1b20) 62%,var(--color-bg,#f6f7f7));background:linear-gradient(color-mix(in oklab,var(--color-primary,#05677f) 6%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in oklab,var(--color-primary,#05677f) 6%,transparent) 1px,transparent 1px),var(--color-sunken,#eef2f3);background-size:24px 24px,24px 24px,auto;border:2px solid var(--frame);outline:1px solid var(--frame);outline-offset:-8px;padding:2rem 2rem 1.5rem;color:var(--color-text,#0e1b20);font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;}.ds-lamina-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:1.25rem;border-block-end:1px solid var(--frame);padding-block-end:1rem;margin-block-end:1.5rem;}.ds-hoja-id{font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);letter-spacing:.02em;border:1px solid var(--frame);padding:4px 10px;color:var(--color-text-secondary,#33474f);white-space:nowrap;}.ds-lamina-head h2{margin:0;font-family:'Sora','Segoe UI',system-ui,sans-serif;font-weight:700;font-size:clamp(1.75rem,1.5rem + 1.1vw,2.25rem);letter-spacing:-.015em;line-height:1.25;text-wrap:balance;}.ds-head-meta{font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-text-muted,#5b6d73);letter-spacing:.02em;white-space:nowrap;}.ds-plate{background:var(--color-surface,#ffffff);border:1px solid var(--color-line,#d3dde0);}.ds-plate-stage{padding:1.5rem;display:grid;place-items:center;min-block-size:96px;color:var(--color-text-muted,#5b6d73);}.ds-plate-cap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-block-start:1px solid var(--color-line,#d3dde0);padding:.5rem 1rem;font-family:'IBM Plex Mono','Cascadia Code',Consolas,monospace;font-size:clamp(.75rem,.72rem + .15vw,.8125rem);color:var(--color-text-muted,#5b6d73);letter-spacing:.02em;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La lámina de plano acotado (The Dimensioned Drawing Sheet)",
+    "overview": "The manual is not a style guide of cards and it has no marketing hero. It is a set of eight engineering drawing sheets (láminas 00–07), each one a measured plate: a double perimeter rule, a faint teal-tinted retícula under the piece, a boxed sheet identifier, dimension lines (cotas) and leaders in mono, notes in the margin, and a title block (cajetín) with sheet number, scale and revision at every foot. The reader finds the rule that applies, sees it measured over the approved artwork and demonstrated in live components, copies the token with one click, and navigates sheet by sheet. The dark register is the same sheet in negative — never a different design.\n\nThe personality is industrial precision with software calm: cool teal-tinted ink neutrals, one corporate teal that carries action and measurement, contained 4–8px corners on UI parts and right angles on the sheet furniture itself. Density is moderate and rhythmic — a 4px spacing base, a calm 68ch reading column, and mono reserved strictly for measurement, data, tokens and folios. Accessibility is a brand rule, not a feature: every text pair is audited (WCAG 2.2, AA minimum, AAA where feasible) in both registers, functional borders hold ≥3:1, and state is never carried by color alone. The retícula grid background on each lámina is intentional and load-bearing: it is the blueprint/measurement surface of the sheet, not decoration — the two detector advisories it raises are accepted by design.\n\nTwo product constraints bind every surface built from this system: all demo UI and slide content is synthetic and labeled as such on the sheet itself (no fabricated clients, metrics or benchmarks), and partner badges (Microsoft) are never invented — the build carries a labeled dashed placeholder until official partner artwork is supplied. The direction brief named paper #f2f5f5 and ink #122a33; the built system settled on the ink ramp's #f6f7f7 paper and #0e1b20 ink (the build wins; #122a33 survives only as the print frame ink).",
+    "keyCharacteristics": [
+      "Eight numbered drawing sheets with double perimeter rule (2px border + 1px outline at −8px offset), 24px teal retícula over sunken paper, head strip and cajetín + revisión + hoja-nav at every foot.",
+      "One corporate teal, two registers: #05677f on light, #4cc3dd on dark, each with its verified on-primary pair; semantic solids invariant across modes.",
+      "Three OFL families with strict roles: Sora (display 600–800), Source Sans 3 (body/UI 400/600), IBM Plex Mono (measurement/data/tokens/folios 400/500).",
+      "Fluid clamp type scale xs→4xl (12→76px), 68ch reading measure, tabular-nums on every data column.",
+      "Flat by default; tonal layering (bg → sunken → surface → raised); shadows only where something truly lifts (the modal).",
+      "Progressive enhancement throughout: color-scheme + light-dark() with fallbacks, native dialog + invoker commands with polyfill/click fallbacks, container-query tables, scroll-snap rail, scrollspy with IO fallback; everything readable without JS.",
+      "One authored motion moment: the cotas of lámina 00 draw themselves in once on entry; everything else is 120ms state transitions."
+    ],
+    "rules": [
+      {
+        "name": "The Invariant Solid Rule",
+        "body": "Semantic solids (#1a7f4e / #e8a013 / #b3261e / #05677f) and their on-solid pairs never change between light and dark; only inline semantic text and tints have per-mode variants. A status badge looks identical in both registers.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Accent Rule",
+        "body": "Violet belongs to iAItech alone. Products (SMflow, TimeDesk, SmartLean, iAR-CHK) are distinguished by naming and composition under the corporate teal — never by a new color. No second product accent may be invented.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Borders Rule",
+        "body": "--color-border (≥3:1) delimits anything interactive or stateful; --color-line is a decorative hairline and must never be the only edge of an input, the only indicator of a state, or the boundary of a focusable control.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono-Is-Measurement Rule",
+        "body": "IBM Plex Mono appears only for data, metrics, code, tokens, dimension labels and folios. Never as a decorative \"technical\" texture, never for prose.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Column Rule",
+        "body": "Every figure in a table, KPI or comparison uses font-variant-numeric: tabular-nums (the token file enforces it on table, .kpi, code, pre, .data); proportional numerals in columns are forbidden — lámina 04 demonstrates the failure side by side.",
+        "section": "typography"
+      },
+      {
+        "name": "The Short-Caps Rule",
+        "body": "Sustained uppercase only on short labels with 0.12em tracking; never on sentences or paragraphs. Sora never sets paragraphs.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sheet Rule",
+        "body": "Every chapter is a lámina: head strip with boxed folio, measured piece, margin notes where needed, and cajetín + revisión + hoja-nav at the foot. A surface without its title block is unfinished.",
+        "section": "layout"
+      },
+      {
+        "name": "The Retícula Is the Surface Rule",
+        "body": "The 24px teal grid is the blueprint ground of each sheet, not an ornament. It stays in both registers (fainter in dark via the same 6% mix over dark sunken) and its detector advisories are accepted by design.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Surfaces are flat at rest; a shadow means something is truly above the sheet (today: only the modal). Never shadow the logo — lámina 02 shows the drop-shadow misuse as a defect.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Contained Corner Rule",
+        "body": "Industrial register means 4–8px on interactive parts; full pills are reserved for badges/chips/switch. Sheet furniture stays square — a rounded lámina is not a drawing.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do consume tokens/tokens.css semantic custom properties (--color-*, --text-*, --space-*, --radius-*) — never hardcode mode-dependent values; the dark register must come free with every component.",
+      "Do keep semantic solids invariant across modes and pair them with their audited on-solid; use the per-mode text variant for inline semantic text.",
+      "Do accompany every state color with an icon and text (badges, alerts, deltas, errors).",
+      "Do use --color-border (≥3:1) for anything interactive or stateful, and reserve --color-line for decorative hairlines.",
+      "Do set all data columns in tabular-nums; keep mono for measurement, data, code, tokens and folios.",
+      "Do give every chapter sheet its head strip, cajetín, revisión and hoja-nav; keep the 24px retícula as the sheet's measurement ground (its grid advisories are intentional).",
+      "Do label all demo content as synthetic on the surface itself («datos de demostración», «cifras sintéticas»), and keep partner badges as labeled placeholders until official art arrives.",
+      "Do use the approved logo paths verbatim (recolor/crop only), respect 1x clear space (40.53u) and the 96px/24mm full-logo minimum, dropping to the isotipo below it.",
+      "Do keep motion to 120ms state transitions on the shared ease, honor prefers-reduced-motion, and preserve the single authored draw-in moment on lámina 00 only.",
+      "Do build progressively: native dialog/invokers/scrollspy/container queries first, with the polyfill and fallback paths the build already ships; everything must read without JS.",
+      "Do test the longest label variant (FR can double ES): buttons size to content + padding, switches wrap their labels rather than truncate."
+    ],
+    "donts": [
+      "Don't redraw, stretch, recolor outside the approved versions, shadow or bevel the logo, or place it on insufficient-contrast backgrounds.",
+      "Don't invent a second product accent: violet is iAItech's alone; other products differentiate by naming and composition under the corporate teal.",
+      "Don't use --color-line as an input border, a focus indicator or the sole carrier of a state.",
+      "Don't change semantic solids between light and dark, or put white text on the warning solid (its on-color is ink #0e1b20).",
+      "Don't set paragraphs in Sora, use mono as decorative \"technical\" texture, run sustained uppercase on sentences, or use proportional numerals in columns.",
+      "Don't round the sheet furniture (lámina, plate, cajetín stay square) or use full pills outside badges/chips/switch.",
+      "Don't add resting shadows to flat surfaces, hard offset shadows, or entry animations beyond the one authored cotas moment.",
+      "Don't fabricate clients, metrics, testimonials or partner badges; the orange #c2410c in the misuse plate is a demonstrated defect, not a palette color.",
+      "Don't remove the retícula to silence the grid-background advisories, or reintroduce internal table scroll on stacked layouts (the <700px release exists because container queries cannot style their own container).",
+      "Don't use glyph icons or icon fonts; the sprite's 1.75-stroke inline SVG is the icon language.",
+      "Don't fix component widths to the shortest language, or truncate multilingual labels."
+    ]
+  }
+}

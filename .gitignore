@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+
+# Logo proposal source files
+/assets/logo/propuestas/
+
+# Playwright MCP snapshots
+.playwright-mcp/
